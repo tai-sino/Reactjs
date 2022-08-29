@@ -59,10 +59,33 @@
 - ĐAM MÊ
 - KIÊN TRÌ
 - HIỆU QUẢ
-Feedback: Bạn đang sử dụng hệ điều hành nào?
+- CHỦ ĐỘNG
 
-
-
-
-PHƯƠNG PHÁP, ĐỊNH HƯỚNG
-HOÀN THÀNH KHOÁ HỌC
+## III. PHƯƠNG PHÁP, ĐỊNH HƯỚNG
+### 1. Phương pháp học lập trình của Admin F8?
+- Các việc nên làm trong quá trình thực tập:
+    - Chủ động liên hệ team lead hỏi về lộ trình, những thứ nên học, chủ động tìm hiểu, cách hoà nhập vào team.
+    - Tìm hiểu về onboarding, quy chế,văn hoá, sản phẩm,công nghệ, cách kiếm tiền từ sản phẩm của khách hàng, doanh nghiệp
+- Lộ trình Front End:
+    - Khoá học HTML, CSS học khoảng 1-2 tháng, mỗi buổi 3-4h 
+    - Response design.
+    - Figma.
+    - Khoá học Javascript 2-3 tháng. Có được tư duy lập trình.
+    - Khoá học Reactjs 
+### 2. Làm sao để có thu nhập cao và đi xa hơn trong ngành IT?
+- Phát triển bản thân. hết!
+- Master 1 lĩnh vực.
+- Đam mê và tự giác, cố gắng ko ngừng.
+### 3. 8 lời khuyên giúp học lập trình tại F8 hiệu quả hơn!
+1. Học theo lộ trình trong danh sách phát (nếu học với Youtube)
+2. Xem kỹ trước một lượt, xem lại và thực hành
+3. Nên có 2 màn hình để học liền mạch hơn
+4. Lựa chọn không gian phù hợp với bản thân (tập trung hơn, học vào hơn)
+5. Luyện tập thói quen note ra giấy nhớ hoặc cuốn sổ nhỏ
+6. Rèn luyện kỹ năng tự học
+7. Luôn đặt deadline cho những việc mình làm
+8. Tư duy học để làm ra sản phẩm, luôn cố gắng áp dụng kiến thức lý thuyết vào thực tế
+## 2. HOÀN THÀNH KHOÁ HỌC
+- Hướng dẫn ứng tuyển xin việc
+- <https://fullstack.edu.vn/learning/lessons-for-newbie?id=8bb6555a-f101-4321-9233-4ff17945cdb2>
+- Nhận chứng chỉ
