@@ -85,7 +85,9 @@
 6. Rèn luyện kỹ năng tự học
 7. Luôn đặt deadline cho những việc mình làm
 8. Tư duy học để làm ra sản phẩm, luôn cố gắng áp dụng kiến thức lý thuyết vào thực tế
-## 2. HOÀN THÀNH KHOÁ HỌC
+## IV. HOÀN THÀNH KHOÁ HỌC
 - Hướng dẫn ứng tuyển xin việc
 - <https://fullstack.edu.vn/learning/lessons-for-newbie?id=8bb6555a-f101-4321-9233-4ff17945cdb2>
 - Nhận chứng chỉ
+
+Source: <https://fullstack.edu.vn/>
