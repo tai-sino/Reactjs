@@ -2,19 +2,30 @@
 
 ## I. BẮT ĐẦU
 ### 1. Bạn sẽ làm được gì sau khóa học?
-
+ 1. Xây dựng được giao diện website
+ 2. Phân tích giao diện website
+ 3. Đặt tên class theo chuẩn BEM
+ 4. Xây dựng layout với Flexbox
+ 5. Làm hiệu ứng với animation
+ 6. Xây dựng giao diện responsive
+ 7. Rất nhiều các kỹ thuật nâng cao khác
 
 ### 2. Tìm hiểu về HTML, CSS
-
+ 1. HTML là chữ viết tắt của Hypertext Markup Language
+ 2. CSS là ngôn ngữ tạo phong cách cho trang web - Cascading Style Sheet languague.
 
 ### 3. Làm quen với Dev tools
 
+ - Dev tool (F12) trong Google Chrome.
+ - Tab element, network, source,...
 
 ### 4. Cài đặt VS Code, Page Ruler extension
-
+ - Vscode + live server
+ - smart page ruler
+ - <https://codeforgeek.com/best-visual-studio-code-extensions-web-development/>
 
 ### 5. Lưu ý khi học lập trình tại F8
-
+ <https://fullstack.edu.vn/learning/html-css?id=4fa93b5a-f764-443f-8991-aeeac35ec986>
 ## II. LÀM QUEN VỚI HTML
 
 ### 6. Cấu trúc của 1 file HTML
@@ -665,3 +676,5 @@
 ### 166. Nhận chứng chỉ khóa học
 
 01:00
+
+source: <https://fullstack.edu.vn/>
