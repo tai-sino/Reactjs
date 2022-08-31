@@ -227,55 +227,80 @@ Các Unit thường dùng:
 
 ### 33. Ví dụ sử dụng đơn vị % #1
 
-02:45
+- pass
 
 ### 34. Reset margin được đặt mặc định
 
-02:13
+-  margin: 0; /* Loại bỏ margin mặc định */
+- padding: 0; /* Loại bỏ padding mặc định */
 
 ### 35. Thực hành reset CSS
 
-02:08
+- pass
 
 ### 36. Ví dụ sử dụng đơn vị % #2
 
-03:50
+- width: 100%;
+- height: auto; => height mặc định là auto vì thế ko thể sử dụng % trừ khi chúng ta set kích thước height cho element cha.
 
 ### 37. Ví dụ sử dụng đơn vị rem #1
 
-01:50
+- pass
 
 ### 38. Vấn đề khi sử dụng px cho font-size
 
-01:52
+- Thay đổi kích thước đồng loạt khó.
 
 ### 39. Ưu điểm khi sử dụng rem cho font-size
 
-02:33
+- set font-size: 62.5%; trong html{}.
 
 ### 40. Một số hàm trong CSS
 
-06:14
+- var()
+- linear-gradient()
+- rgba()
+- rgb()
+- attr()
+- calc()
+- ...
+- <https://www.w3schools.com/cssref/css_functions.asp>
 
 ### 41. Thực hành dùng hàm var()
 
-03:38
+- pass
 
 ### 42. Thực hành dùng hàm rgba()
 
-03:21
+- pass
 
 ### 43. Pseudo classes trong CSS
 
-03:43
+- CSS pseudo-classes
+    - :root
+    - :hover
+    - :active
+    - :first-child
+    - :last-child
+    - ...
+    - <https://www.w3schools.com/css/css_pseudo_classes.asp>
+    -  phải có content:"";display:block;
 
 ### 44. Thực hành sử dụng :hover
 
-04:07
+- pass
 
 ### 45. Pseudo elements trong CSS
 
-06:15
+- CSS pseudo-element
+    - ::before
+    - ::after
+    - ::first-letter
+    - ::first-line
+    - ::selection
+    - ...
+    - <https://www.w3schools.com/css/css_pseudo_elements.asp>
+    - phải có content:"";display:block;
 
 ### 46. Thực hành sử dụng pseudo elements
 
