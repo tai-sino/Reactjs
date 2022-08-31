@@ -3,7 +3,7 @@
     --main-color: red;
 }
 html{
-    font-size: 100%;
+    font-size: 150%;
 }
 h5{
     color: var(--main-color);
@@ -40,4 +40,69 @@ h1 {
     width: 100px;
     height: 100px;
 }
+ /* CSS function */
+ .rgb-func {
+    color: rgb(177, 50, 50);
+ }
+ a::after{
+    content: "("attr(href) ")";
+ }
+ .calc-func{
+    font-size: calc(100% + 30px - 1rem);
+    color: rgba(150,150,150,0.8);
+ }
 
+ /* CSS Pseudo-classes */
+ .box-pseudo{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+ }
+ .box-pseudo:active{
+    background-color: blue;
+ }
+
+ .parent li:first-child{
+    color: red;
+ }
+ .parent li:last-child{
+    color: red;
+ }
+ .parent li:hover{
+    color: black;
+ }
+/* CSS Pseudo-elements */
+.box-element{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+ }
+ .box-element::before{
+    display: block;
+    width: 30%;
+    height: 30px;
+    background-color: #fff;
+    content: "::before";
+    color: red;
+ }
+ .box-element::after{
+    margin-top: 10px;
+    display: block;
+    width: 30%;
+    height: 30px;
+    background-color: #fff;
+    content: "::after";
+    color: red;
+ }
+ .parent-element li:nth-child(3)::first-letter{
+    color: violet;
+    font-size: 40px;
+ }
+ .parent-element li:nth-child(4)::first-line{
+    color: brown;
+    font-size: 40px;
+ }
+
+ .parent-element li::selection{
+    background-color: yellow;
+}

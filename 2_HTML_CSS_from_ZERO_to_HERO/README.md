@@ -154,7 +154,7 @@
         - .parent p => style cho tất cả tag p nằm trong class parent
         - .parent .child => style cho class child nằm bên trong class parent (có khoảng trắng ở giữa)
 
-[![css-selector](/css-selector.png)]
+[![css-selector](assets/../../assets/images/css-selector.png)]
 
 ### 26. Thực hành CSS selectors #1
 
