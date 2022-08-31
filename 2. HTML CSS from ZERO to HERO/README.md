@@ -21,60 +21,91 @@
 
 ### 4. Cài đặt VS Code, Page Ruler extension
  - Vscode + live server
- - smart page ruler
+ - Smart page ruler
  - <https://codeforgeek.com/best-visual-studio-code-extensions-web-development/>
+ - Best usefull hotkey
+ - <https://cult.honeypot.io/reads/20-vs-code-shortcuts-developers/>
 
 ### 5. Lưu ý khi học lập trình tại F8
  <https://fullstack.edu.vn/learning/html-css?id=4fa93b5a-f764-443f-8991-aeeac35ec986>
+
 ## II. LÀM QUEN VỚI HTML
 
 ### 6. Cấu trúc của 1 file HTML
 
-06:20
+><!DOCTYPE html>
+<html lang="en">
+ <!-- head setting -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Shop</title>  <!-- SEO google keyword -->
+</head>
+  <!-- body content-->
+<body>
+</body>
+</html>
 
 ### 7. Làm quen với màn thử thách
 
-01:00
+- Pass
 
 ### 8. Ví dụ cấu trúc file HTML
 
-01:10
+- Pass
 
 ### 9. Comments trong HTML
 
-02:12
+- Ctrl + / để comment line.
 
 ### 10. Ví dụ comments trong HTML
 
-00:53
-
+- Pass
 ### 11. Các thẻ HTML thông dụng
 
 11:08
 
 ### 12. Ví dụ thẻ HTML thông dụng
 
-02:16
+1. h1 - h6: Heading 1-6
+2. p (paragraph): đoạn văn
+3. img (image): hình ảnh
+    - src: link ảnh
+    - alt: nếu hình ảnh lỗi thì hiển thị text
+4. a (anchor): thẻ gán link
+    - href: link nguồn
+5. ul (unordered list), li (list item):
+6. table:
+    - thead (table  heading)
+        - th: hiển thị heading dưới dạng bold và center-align
+    - tbody (table  body)
+        - tr (table row): Các dòng của table, tối thiểu cần có 1 dòng.
+        - td (table cell): các ô trên một dòng.
+7. input: <https://www.w3schools.com/tags/tag_input.asp>
+8. button:<<https://www.w3schools.com/tags/tag_button.asp>
+9. div: tạo 1 khổi giúp gom gọn các tag.
 
 ### 13. Bài tập thẻ HTML thông dụng #1
 
-04:15
+- Pass
 
 ### 14. Bài tập thẻ HTML thông dụng #2
 
-05:11
+- Pass
 
 ### 15. Bài tập thẻ HTML thông dụng #3
 
-03:47
+- Pass
 
 ### 16. Attribute trong HTML là gì?
 
-01:54
+- Attribute là thuộc tính của 1 tag và nằm trong thẻ mở.
+    - vd: title, onclick, style,...
 
 ### 17. Bài tập sử dụng Attribute #1
 
-03:55
+- Pass
 
 ### 18. Cách quản lý thư mục dự án
 
