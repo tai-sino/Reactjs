@@ -75,7 +75,7 @@
     - alt: nếu hình ảnh lỗi thì hiển thị text
 4. a (anchor): thẻ gán link
     - href: link nguồn
-5. ul (unordered list), li (list item):
+5. ul/ol (unordered list/ordered list), li (list item):
 6. table:
     - thead (table  heading)
         - th: hiển thị heading dưới dạng bold và center-align
@@ -109,63 +109,121 @@
 
 ### 18. Cách quản lý thư mục dự án
 
-11:50
+- Tạo và sắp xếp thư mục với workspace
+- Quy tắc đặt tên
 
 ### 19. Feedback: Bạn đang sử dụng hệ điều hành nào?
+- Done
 
 ## LÀM QUEN VỚI CSS
 
 ### 20. Sử dụng CSS trong HTML
 
-07:13
+- Có 3 cách sử dựng CSS
+    - External (link file CSS để format HTML)
+    - Internal (CSS được viết trong tag Style và nằm trong phần head của file HTML)
+    - Inline ( sử dụng attribute style để viết CSS format HTML inline trên tag)
+- Inline có độ ưu tiên cao nhất, tuỳ theo thứ tự của External và Internal trong phần head, CSS nào áp dụng sau sẽ đè lên cái trước và được hiển thị
+
 
 ### 21. Thực hành sử dụng CSS internal
 
-03:55
+- Pass
 
 ### 22. ID và Class
 
-04:18
+- Thuộc tính ID dùng để tạo 1 định danh duy nhất cho 1 element
+- Thuộc tính Class dùng để tạo 1 lớp các element có cùng 1 định dạng CSS, 1 thẻ có thể có nhiều class và được cách nhau bằng khoảng trắng
+    - ID sẽ được ưu tiên hơn so với class trong trường hợp cả 2 đều đc CSS Selector trỏ đến. phần CSS của ID sẽ được hiển thị.
 
 ### 23. Thực hành sử dụng CSS external
 
-03:13
+- Pass
 
 ### 24. CSS selectors cơ bản
 
-04:00
+- <https://fullstack.edu.vn/learning/html-css?id=98aa429f-66db-42b4-a0c4-5614593e9888>
 
 ### 25. Ví dụ sử dụng CSS selectors cơ bản
 
-03:46
+- class="first second"
+    - .first.second {} (ko có khoảng trắng, dùng dê style cho 1 elemend có nhiều class)
+-  div class="parent"
+    - p
+    - p class="child"
+        - .parent p => style cho tất cả tag p nằm trong class parent
+        - .parent .child => style cho class child nằm bên trong class parent (có khoảng trắng ở giữa)
+
+[![css-selector](/css-selector.png)]
 
 ### 26. Thực hành CSS selectors #1
 
-05:02
+- pass
 
 ### 27. Độ ưu tiên trong CSS
 
-10:31
+- Priority
+    1.  Internal = External
+    2.  !important = 10000p
+    3.  Inline 1000p
+    4.  ID = 100p
+    5.  Class = 10p
+    6.  Tag = 1p
+    7.  Universal (*) and Inherit (html tag) = 0p
+    8.  Equal specificity. Điểm giống nhau thì sẽ tính cái nào đặt sau!
+    9.  Tổng kết: càng chi tiết, càng nhiều điểm và càng được ưu tiên.
 
 ### 28. Thực hành độ ưu tiên trong CSS #1
 
-04:26
+- pass
 
 ### 29. Sử dụng biến trong CSS
 
-03:48
+- Global variable CSS
+    - :root {
+     --main-color: red; //đặt biến main color là red và có phạm vi ảnh hưởng global
+        }
+
+- Local variable CSS
+    - h1{
+        --local-color: blue; //tạo biến local color là blue và chỉ ảnh hưởng trong farm vi tag h1)
+        }
 
 ### 30. Vấn đề khi không sử dụng biến CSS
 
-02:37
+- pass
 
 ### 31. Giải quyết vấn đề với biến CSS
 
-01:18
+- pass
 
 ### 32. Các đơn vị trong CSS
 
-10:56
+- Absolute units:
+    1. px
+    2. pt
+    3. cm
+    4. mm
+    5. inch
+    6. pc
+- Relative units:
+    1. %
+    2. rem
+    3. em
+    4. vw
+    5. vh
+    6. vmin
+    7. vmax
+    8. ex
+    9. ch
+
+Các Unit thường dùng:
+- Pixel giữa pixel CSS và pixel trên device là khác nhau phụ thuộc vào resolution của device. <https://www.ironin.it/blog/css-resolution-and-device-resolution-difference.html#:~:text=The%20difference%20between%20CSS%20resolution%20and%20device%20resolution,-With%20the%20rising&text=Device%20screen%20resolution%20is%20the,ppcm%20or%20pixels%2Fcm).>
+- %: percent sẽ dựa vào w và h của element
+- rem: rem sẽ kế thừa font-size từ tag html (global). mặc định 100% = 16px (sử dụng nhiều để làm responsive website)
+- em: em sẽ kế thừa font-size từ tag cha gần nhất có thuộc tính font-size ( ít dùng)
+- vw (viewport width): percent device. 50vw = 50% width của device
+- vh (viewport height):percent device. 50vh = 50% height của device
 
 ### 33. Ví dụ sử dụng đơn vị % #1
 

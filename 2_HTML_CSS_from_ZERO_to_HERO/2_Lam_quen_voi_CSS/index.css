@@ -1,0 +1,43 @@
+/* CSS variable */
+:root{
+    --main-color: red;
+}
+html{
+    font-size: 100%;
+}
+h5{
+    color: var(--main-color);
+}
+
+
+/* h1, li,.. là selector */
+li {
+    color:blue
+}
+h1 {
+    color: green;
+}
+#first-heading {
+    color: red;
+    font-size: 25px;
+}
+
+.first-class {
+    color: blue;
+    font-size: 20px;
+}
+.second-class{
+    font-size: 15px;
+    color: pink;
+}
+.first-class.second-class {
+    color: orange;
+    font-size: 10px;
+}
+/* CSS units */
+.box{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
