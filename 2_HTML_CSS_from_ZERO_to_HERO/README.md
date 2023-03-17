@@ -186,7 +186,7 @@
 
 - Local variable CSS
     - h1{
-        --local-color: blue; //tạo biến local color là blue và chỉ ảnh hưởng trong farm vi tag h1)
+        --local-color: blue; //tạo biến local color là blue và chỉ ảnh hưởng trong phạm vi tag h1)
         }
 
 ### 30. Vấn đề khi không sử dụng biến CSS
@@ -304,120 +304,166 @@ Các Unit thường dùng:
 
 ### 46. Thực hành sử dụng pseudo elements
 
-04:09
+- pass
 
 ## IV. ĐỆM, VIỀN VÀ KHOẢNG LỀ
 
+![Compute](/assets/images/Compute.png)
+
 ### 47. Thuộc tính padding (đệm)
 
-06:20
+- padding:
+    - All (Top + Right + Bottom + Left)    
+    - Top + Bottom  /  Right + Left
+    - Top  /  Right + Left  /  Bottom
+    - Top  /  Right  /  Bottom  /  Left
 
 ### 48. Thực hành sử dụng padding #1
 
-01:31
+- pass
 
 ### 49. Thực hành sử dụng padding #2
 
-01:54
+- pass
 
 ### 50. Thuộc tính border (đường viền)
 
-06:06
+- border attribute:
+    - border-width:
+    - border-stype:
+    - border-color:
+    - ==> border: $width $style $color;
 
 ### 51. Thực hành sử dụng border #1
 
-02:40
+- pass
 
 ### 52. Thuộc tính margin (khoảng cách lề)
 
-05:31
+- margin attribute: 
+    - margin-width:
+    - margin-stype:
+    - margin-color:
+    - ==> margin: $width $style $color;
 
 ### 53. Thực hành sử dụng margin #1
 
-06:29
+- pass
 
 ### 54. Thuộc tính box-sizing
 
-05:12
+- box-sizing attribute:
+    - content-box: default.
+    - border-box: sử dụng nhiều nhất, để biến content thành box giữ nguyên kích thước width & height.
+    - unset: trở về mặc định
 
 ### 55. Thực hành sử dụng box-sizing
 
-02:47
-
+- pass
 ## V. THUỘC TÍNH TẠO NỀN
 
 ### 56. Thuộc tính background-image
 
-12:47
+![Background-image](/assets/images/background-image.png)
+- background-image: url(...);
+    - background-image: linear-gradient($degree(0,90deg,...), $color1, $color2)
+- background-size: 100%; (100% auto)
+- background-repeat: no-reapeat;
 
 ### 57. Sử dụng thuộc tính background-image
 
-03:29
+- pass
 
 ### 58. Thuộc tính background-size với cover, contain
 
-03:17
+- background-size:
+    - contain: lấy chiều dài cạnh ngắn nhất làm 100%.(ảnh luôn hiển thị đầy đủ - có thể hiển thị phần background ngoài ảnh)
+    - cover: lấy chiều dài cạnh dài nhất làm 100% bất kể ảnh có bị che khuất hay ko. (có thể hiển thị hình ảnh tràn ra ngoài màn hình - ko thể nhìn thấy background)
 
 ### 59. Sử dụng thuộc tính background-size
 
-01:15
+- pass
 
 ### 60. Thuộc tính background-origin
 
-02:58
+- background-origin ( tương tự background-clip )
+    - border-box:  hiển thị ảnh từ viền ngoài vùng border vào trong.
+    - padding-box: hiển thị ảnh từ viền ngoài vùng padding vào trong. (default)
+    - content-box: hiển thị ảnh từ viền ngoài vùng content vào trong.
 
 ### 61. Sử dụng thuộc tính background-origin
 
-01:42
+- pass
 
 ### 62. Thuộc tính background-position
 
-04:15
+- background-position
 
 ### 63. Sử dụng thuộc tính background-position
 
-01:21
+- pass
 
 ### 64. Cú pháp "shorthand" cho background
-
-02:30
-
+- cách rút gọn background-image
+- background: [$color / url(image)] no-repeat center / contain;
+    - [$color / url(image)] color hoặc img
+    - background-repeat: no-repeat;
+    - background-position: center / background-size: contain;
+        - dấu / quan trọng.
 ### 65. Sử dụng cú pháp "shorthand" cho background
 
-00:27
+- pass
+
 ## VI. THUỘC TÍNH VỊ TRÍ
+
+- Position: 
+    - Relative: neo tại vị trí hiện tại - tương đối.
+    - Absolute: neo tại vị trí hiện tại - tuyệt đối 
+    - Fixed: Neo phụ thuốc vào khung trình duyệt
+    - Sticky: Bám dính vào khung trình duyệt (ko khuyến khích sử dụng)
+        - Các thuộc tính top,left,bottom,right chỉ hoạt động khi có thuộc tính position.
+        
 
 ### 66. CSS position relative
 
-03:04
+- Position: relative;
+    - top: 100px;
+    - left: 100px;
+    -
 
 ### 67. Thực hành CSS position relative
 
-02:08
+- pass
 
 ### 68. CSS position absolute
 
-07:58
+- Position: absolute; Sẽ neo vào thẻ cha gần nhất có thuộc tính Position(Bất kể loại nào).
+    - Các thuộc tính top,left,bottom,right chỉ hoạt động khi có thuộc tính position.
+    - Nếu cả 4 thuộc tính trên = 0, Thẻ sẽ phủ toàn bộ thẻ cha.
+    - Ko thể sử dụng 2 thuộc tính đối nghịch cùng lúc. ( top # bottom,..)
 
 ### 69. Thực hành CSS position absolute
 
-02:57
+- pass
 
 ### 70. CSS position fixed
 
-03:29
+- Position: fixed; Sẽ neo vào khung trình duyệt 1 vị trí cố định.
+    - Thường sẽ neo vào top hoặc bottom, có thể sử dụng cùng lúc 2 thuộc tính đối nghịch.
 
 ### 71. Thực hành CSS position fixed
 
-01:41
+- pass 
 
 ### 72. CSS position sticky
 
-03:18
-
+- Position: sticky; Position: -webkit-sticky; (Safari)
+    - Ko nên sử dụng vì ko hỗ trợ tốt trên nhiều trình duyệt ( chỉ hỗ trợ tốt firefox và safari)
+    - Có thể thay thế bằng Position: Fixed và javascript.
+    - Công dụng: Khi scroll tới giới hạn sẽ dừng tại vị trí đc neo.
 ### 73. Thực hành CSS position sticky
 
-01:26
+- pass
 
 ### 74. Các cách căn giữa trong CSS
 
