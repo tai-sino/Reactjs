@@ -467,15 +467,37 @@ Các Unit thường dùng:
 
 ### 74. Các cách căn giữa trong CSS
 
-16:54
+- Cách 1:
+    //tạo biến cục bộ lưu giá trị độ cao
+    --height-value: 100px;
+    - height: var(--height-value);
+    - text-align: center;
+    - line-height: var(--height-value);
+
+- Cách 2:
+    - display: flex;
+        - align-items: center;
+        - justify-content: center;
+            - Có thể sử dụng để căn giữa cùng lúc nhiều đối tượng.
+    hoặc parent = > display:flex;
+        child = > margin: auto;
+- Cách 3:
+    parent=> position: relative;
+    child => position: absolute;
+                - top: 50%;
+                - left: 50%;
+                - tranform: translate(-50%,-50%);
 
 ### 75. Thực hành cách căn giữa trong CSS
 
-03:13
+- pass
 
 ### 76. Hiển thị ảnh dự phòng khi ảnh chính lỗi
 
-06:26
+ - Đối với <img> attribute onerror
+    - <img src="/img1" onerror="this.src='/img2'">
+ - Dối với background img trong thẻ div.
+    -   background-image: 
 
 ### 77. Ôn tập hiển thị ảnh dự phòng khi ảnh chính lỗi
 

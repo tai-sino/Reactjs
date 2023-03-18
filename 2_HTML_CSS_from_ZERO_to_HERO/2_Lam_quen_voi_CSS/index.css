@@ -85,6 +85,7 @@ h1 {
     content: "::before";
     color: red;
  }
+ 
  .box-element::after{
     margin-top: 10px;
     display: block;
@@ -92,7 +93,7 @@ h1 {
     height: 30px;
     background-color: #fff;
     content: "::after";
-    color: red;
+    color: blue;
  }
  .parent-element li:nth-child(3)::first-letter{
     color: violet;
