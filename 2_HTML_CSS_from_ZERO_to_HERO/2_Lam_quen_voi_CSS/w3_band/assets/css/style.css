@@ -1,0 +1,162 @@
+/* Reset CSS */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* variable */
+--header-height: 46.5px;
+--subnav-items-height: 38.5px;
+}
+/* Reset a */
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 15px;
+}
+h1,h2,h3,h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+
+/* font */
+@font-face {
+    font-family: Lato;
+    src: url(/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/fonts/Lato-Regular.ttf);
+  }
+
+
+.main {
+
+}
+
+.header {    
+    height: var(--header-height);
+    background-color: #000;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Begin: Navigation */
+.nav{
+    /* position: fixed;
+    top: 0px; */
+}
+
+.nav li{
+    float: left;
+    display: block;
+    position: relative;
+}
+
+.nav li a{
+    display: block;
+    color: #fff;
+    line-height: var(--header-height);
+    padding: 0 24px;
+    font-family: Lato;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.nav li:hover a{
+   background-color: #ccc;
+   color: #000;
+}
+
+.nav .subnav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    box-shadow: 0 0px 10px 0 rgba(0,0,0,0.3); 
+}
+
+.nav .subnav li{    
+    min-width: 160px;
+    height: var(--subnav-items-height);
+      
+}
+
+.nav li:hover .subnav{
+    display: block;
+    float: none;    
+}
+
+.nav li:hover .subnav a{
+    padding: 0 16px;
+    display: block;
+    color: #000;
+    background-color: #fff;
+    text-transform: none;
+    text-align: left;
+    line-height: var(--subnav-items-height);    
+}
+
+.nav .subnav li:hover a{    
+    color: #000;
+    background-color: #ccc;      
+}
+/* End: Navigation */
+
+/* Begin: Search button */
+.button-search{    
+    background-color: #000;
+    float: right;
+    line-height: var(--header-height);   
+}
+.button-search:hover{
+    background-color: #f44336;
+}
+.button-search a{
+    line-height: var(--header-height);
+    display: block;
+    color: #fff;
+    padding: 0 24px;
+}
+/* End: Search button */
+
+/* Begin: Slider */
+.slider {
+    position: relative;
+    margin-top: var(--header-height);
+    padding-top: 50%;
+    background: url('/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/chicago.jpg') top center / contain;
+}
+
+.slider .img-title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    bottom: 0;
+    text-align: center;
+    margin: 32px 0;
+}
+
+.slider .img-title h3{
+   font-size: 24px;
+   margin: 10px 0;
+   font-weight: 400;
+   font-family: 'Segoe UI', Tahoma, Arial, Verdana, sans-serif;
+}
+
+.slider .img-title p{
+    font-size: 15px;
+    margin: 15px 0;
+    font-family: Lato;
+ }
+ 
+
+
+
+.container {
+
+}
+
+.footer {
+
+}

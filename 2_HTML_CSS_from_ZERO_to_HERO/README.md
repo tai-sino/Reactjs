@@ -496,28 +496,54 @@ Các Unit thường dùng:
 
  - Đối với <img> attribute onerror
     - <img src="/img1" onerror="this.src='/img2'">
- - Dối với background img trong thẻ div.
-    -   background-image: 
-
+ - Dối với background img trong thẻ <div>.
+    -   background-image: url(img1) , url(img2);
+        Nếu img1 lỗi sẽ hiển thị img2
 ### 77. Ôn tập hiển thị ảnh dự phòng khi ảnh chính lỗi
 
-00:09
+- pass
 
 ### 78. Giới thiệu dự án
 
-02:53
+https://www.w3schools.com/w3css/tryw3css_templates_band.htm
+- Các bước thực hiện:
+    - Phân tích
+    - Dựng base (xây móng)
+    - Xây dựng từng phần theo phân tích
+    - Hoàn thiện
 
 ### 79. Phân biệt & gọi tên các thành phần
 
-16:15
+- Các thành phần trong 1 website:
+    - Header        Đầu trang
+    - Navigation    Điều hướng
+    - Banner        Tất cả các hình ảnh
+    - Breadcrumb    Định vị ví trí website (Index > Child page > ...)
+    - Sidebar       Cột bên trái hoặc bên phải trang web ( có thể là navigation hay bất kì thành phầnn nào)
+    - Slider        Các thành phần có thể trượt
+    - Content       Nội dung chính của trang web, nằm ở phần trung tâm
+    - Footer        Chân trang
 
 ### 80. Phân tích dự án
 
-07:32
+https://www.w3schools.com/w3css/tryw3css_templates_band.htm
+    - Header
+        - Navigation
+        - Dropdown menu
+        - Search
+    - Slider
+        - Image + Info
+    - Content
+        - Band
+        - Tour
+        - Contact
+        - Banner
+    - Footer
+        - Social Page
 
 ### 81. Tạo project base
 
-10:16
+
 
 ### 82. Header CSS
 
