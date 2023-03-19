@@ -543,27 +543,39 @@ https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 
 ### 81. Tạo project base
 
-
+    Cấu trúc thư mục project
+    - w3_band
+        - assets
+            -img
+            -css
+                -style.css
+        -index.html
 
 ### 82. Header CSS
 
-33:50
+    - Các câu hỏi để thực hiện
+        - Vị trí
+        - Kích thước
+        - Màu sắc
+        - Kiểu dáng ( font, hình dạng,...)
+
+    
 
 ### 83. Navigation CSS
 
-28:46
+- Thực hành Navigation
 
 ### 84. Header search CSS
 
-20:11
+ - Thực hành Header search
 
 ### 85. Header fixed CSS
 
-07:19
+ - Thực hành Header fixed
 
 ### 86. Slider CSS
 
-27:21
+ - Thực hành background img
 
 ### 87. About section CSS
 
