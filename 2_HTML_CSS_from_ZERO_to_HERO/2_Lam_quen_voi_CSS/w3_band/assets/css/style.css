@@ -1,5 +1,4 @@
 /* Reset CSS */
-
 *{
     padding: 0;
     margin: 0;
@@ -15,6 +14,7 @@ a{
 }
 html{
     font-size: 15px;
+    line-height: 1.5;   
 }
 h1,h2,h3,h4{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,7 +28,7 @@ h1,h2,h3,h4{
 
 
 .main {
-
+   
 }
 
 .header {    
@@ -149,14 +149,65 @@ h1,h2,h3,h4{
     margin: 15px 0;
     font-family: Lato;
  }
+ /* End: Slider */
  
-
-
-
-.container {
-
+/* Begin: Container */
+.container {    
+   
+    font-family: Lato;
+    color: #000;    
+   
 }
 
+.subcontainer{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 64px 16px;    
+    text-align: center;
+}
+
+/* Begin: Band Section */
+.band-section h2{
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+.band-section i{
+    margin: 15px 0;
+    opacity: 0.60;
+    display: block;
+}
+.band-section.subcontainer>p{
+    margin: 15px 0;
+    display: block;
+    text-align: justify;
+}
+.band-section .member-section {
+ 
+}
+.band-section .member {
+    float: left;
+    width: calc(100%/3);
+    padding: 32px 0;
+    text-align: center;
+}
+.band-section .member p{
+    display: block;
+    margin: 15px 0;
+}
+.band-section .member img{
+    display: block;
+    margin: 15px auto;
+    width: 60%;
+  
+}
+
+
+/* End: Band Section */
+
+
+/* End:Container */
 .footer {
 
 }
