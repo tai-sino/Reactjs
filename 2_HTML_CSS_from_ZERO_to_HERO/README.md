@@ -563,8 +563,9 @@ https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 
 ### 83. Navigation CSS
 
-- Thực hành Navigation
-
+- Thực hành Navigation, một số tag và thuộc tính mới
+    - text-transform: uppercase;
+    - box-shadow: 0 0px 10px 0 rgba(0,0,0,0.3); 
 ### 84. Header search CSS
 
  - Thực hành Header search
@@ -576,14 +577,22 @@ https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 ### 86. Slider CSS
 
  - Thực hành background img
+        - position: absolute;
+        - left: 50%;
+        - transform: translateX(-50%);
 
 ### 87. About section CSS
 
-17:47
-
+    - opacity: 0.60;
+    - width: calc(100%/3);
+    
 ### 88. Team section CSS
 
-14:07
+- border-radius: 4px;
+    - .member-section::after 
+    - content: "";
+    - display: block;
+    - clear: both;
 
 ### 89. Tour tickets CSS
 

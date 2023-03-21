@@ -19,6 +19,9 @@ html{
 h1,h2,h3,h4{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } 
+ul,li{
+    list-style-type: none;
+}
 
 /* font */
 @font-face {
@@ -167,24 +170,25 @@ h1,h2,h3,h4{
 }
 
 /* Begin: Band Section */
-.band-section h2{
+.subcontainer h2{
     margin: 10px 0;
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 4px;
 }
-.band-section i{
+.subcontainer i{
     margin: 15px 0;
     opacity: 0.60;
     display: block;
 }
+
 .band-section.subcontainer>p{
     margin: 15px 0;
     display: block;
     text-align: justify;
 }
-.band-section .member-section {
- 
+.band-section .member-section{   
+  
 }
 .band-section .member {
     float: left;
@@ -192,19 +196,118 @@ h1,h2,h3,h4{
     padding: 32px 0;
     text-align: center;
 }
+.member-section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 .band-section .member p{
     display: block;
     margin: 15px 0;
 }
 .band-section .member img{
-    display: block;
+    display: inline-block;
     margin: 15px auto;
-    width: 60%;
-  
+    border-radius: 4px;
+    width: 60%;  
+}
+/* End: Band Section */
+
+/* Begin: Tour Section */
+.black{
+background-color: #000;
+color: #fff;
+}
+.tour-section li::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.tour-section li{
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.tour-section li p{
+    color: #757575;
+    display: block;
+    float: left;
 }
 
+.tour-section li span{
+    display: block;
+    background-color: #f44336;
+    float: left;
+    padding: 0 8px;
+    margin-left: 16px;
+}
+.tour-section .ticket-available{
+    display: block;
+    padding: 0 8px;
+    margin-right: 16px;
+    float: right;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+}
+.ticket-section{
+    padding: 32px 8px;
+    margin: 0 -16px;
+}
+.ticket-section .ticket-info{
+    width: calc(100%/3);
+    float: left;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
 
-/* End: Band Section */
+.ticket-section .ticket-info img{
+    width: 100%;
+    overflow: clip;
+    overflow-clip-margin: content-box;
+    vertical-align: middle;
+}
+.ticket-section .ticket-info img:hover{
+    opacity: 0.6;
+}
+.ticket-section::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ticket-info .ticket-text{
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    padding: 0 16px;
+    overflow: hidden;
+    
+    
+}
+
+.ticket-info .ticket-text p{
+    display: block;
+    line-height: 1.5;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.ticket-info .ticket-text .ticket-text-opacity{
+    opacity: 0.6;
+    display: block;
+}
+.ticket-info .ticket-text .ticket-btn{
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    font-family: Lato;   
+}
+/* End: Tour Section */
 
 
 /* End:Container */
