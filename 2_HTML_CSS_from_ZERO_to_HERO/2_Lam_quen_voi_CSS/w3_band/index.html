@@ -4,25 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
+    <meta name="viewport" content="width= device-width
     , initial-scale=1.0">
     <title>W3_TheBand</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
 </head>
-</head>
-
 <body>
     <div class="main">
         <!-- Begin: Header -->
         <div class="header">
             <!-- Begin: Navigation -->
             <ul class="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="#">More <i class="fa fa-caret-down"></i></a>
 
@@ -56,7 +55,7 @@
         <!-- Begin: Container -->
         <div class="container">
             <!-- Begin: Band Section -->
-            <div class="band-section subcontainer">
+            <div id="band" class="band-section subcontainer">
                 <h2>THE BAND</h2>
                 <i>We love Music</i>
                 <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -88,7 +87,7 @@
             <!-- End: Band Section -->
 
             <!-- Begin: Tour Section -->
-            <div class="black">
+            <div id="tour" class="black">
                 <div class="tour-section subcontainer">
                     <h2>TOUR DATES</h2>
                     <i>Remember to book your tickets!</i>
@@ -108,99 +107,67 @@
                         </li>
                     </ul>
                     <div class="ticket-section">
-                        <div class="ticket-info">
+                        <div class="ticket-info js-ticket-info">
                             <img src="/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/newyork.jpg"
                                 alt="">
                             <div class="ticket-text">
                                 <p><b>New York</b></p>
                                 <p class="ticket-text-opacity">Fri 27 Nov 2016</p>
                                 <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="ticket-btn">Buy Tickets</button>
+                                <button class="ticket-btn js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="ticket-info">
+                        <div class="ticket-info js-ticket-info">
                             <img src="/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/paris.jpg"
                                 alt="">
                             <div class="ticket-text">
                                 <p><b>Paris</b></p>
                                 <p class="ticket-text-opacity">Sat 28 Nov 2016</p>
                                 <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="ticket-btn">Buy Tickets</button>
+                                <button class="ticket-btn js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="ticket-info">
+                        <div class="ticket-info js-ticket-info">
                             <img src="/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/sanfran.jpg"
                                 alt="">
                             <div class="ticket-text">
                                 <p><b>San Francisco</b></p>
                                 <p class="ticket-text-opacity">Sun 29 Nov 2016</p>
                                 <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="ticket-btn">Buy Tickets</button>
+                                <button class="ticket-btn js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="ticket-modal-section">
-                           <div class="ticket-modal">
-                            <div class="header-modal">
-                                <label for="">
-                                  <h2>
-                                    <i class="fa fa-suitcase"></i>
-                                    Tickets
-                                  </h2>
-                                </label>
-                                <span>x</span>
-                            </div>
-                            <div class="content-modal">
-                                <label for="">
-                                    <i class="fa fa-shopping-cart"></i>
-                                    Tickets, $15 per person
-                                </label>
-                                <input type="text" placeholder="How many?">
-                                <label for="">
-                                    <i class="fa fa-user"></i>
-                                    Send To
-                                </label>
-                                <input type="text" placeholder="Enter email?">
-                                <button class="modal-pay-btn">PAY
-                                    <i class="fa fa-check"></i>
-                                </button>
-                                <>
-                                <button class="modal-close-btn">
-                                    Close
-                                    <i class="fa fa-remove"></i>
-                                </button>
-                                <p>Need <a class="help" href="#">help?</a></p>
-                            </div>
-                            <div class="footer-modal">
-                            </div>
-                           </div>
-                        </div>
+
+
                     </div>
+                    <!-- End ticket Section -->
+
+
                 </div>
             </div>
-
             <!-- End: Tour Section -->
 
             <!-- Begin: Contact Section -->
-            <div class="contact-section subcontainer">
+            <div id="contact" class="contact-section subcontainer">
                 <h2>CONTACT</h2>
                 <i>Fan? Drop a note!</i>
                 <div class="contact-contain">
                     <div class="contact-info">
-                        <i class="fa fa-map-marker" ></i>Chicago, US
+                        <i class="fa fa-map-marker"></i>Chicago, US
                         <br>
-                        <i class="fa fa-phone" ></i>Phone: +00 151515
+                        <i class="fa fa-phone"></i>Phone: +00 151515
                         <br>
                         <i class="fa fa-envelope"></i>Email: mail@mail.com
                     </div>
                     <div class="contact-input">
                         <form action="/action_page.php">
                             <div class="contact-input-info">
-                               <div class="half">
-                               <input type="text" name="Name" required placeholder="Name">
-                               </div>
-                               <div class="half">
-                                <input type="text" name="Email" required placeholder="Email">
-                            </div>
+                                <div class="half">
+                                    <input type="text" name="Name" required placeholder="Name">
+                                </div>
+                                <div class="half">
+                                    <input type="text" name="Email" required placeholder="Email">
+                                </div>
                             </div>
                             <input class="input-message" type="text" placeholder="Message">
                             <button class="btn-send">SEND</button>
@@ -212,7 +179,8 @@
 
             <!-- Begin: Banner Section -->
             <div class="banner-section">
-                <img src="/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/map.jpg" alt="map" class="banner">
+                <img src="/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/map.jpg" alt="map"
+                    class="banner">
             </div>
             <!-- End: Banner Section -->
         </div>
@@ -230,6 +198,69 @@
         </div>
         <!-- End: Fotter -->
     </div>
-</body>
+    <!-- Begin Ticket Modal -->
+    <div class="ticket-modal-section js-modal js-close-btn">
+        <div class="ticket-modal js-ticket-modal">
+            <div class="header-modal">
+                <label for="">
+                    <h2>
+                        <i class="fa fa-suitcase"></i>
+                        Tickets
+                    </h2>
+                </label>
+                <span class="js-close-btn">x</span>
+            </div>
+            <div class="content-modal">
+                <label for="">
+                    <i class="fa fa-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" placeholder="How many?">
+                <label for="">
+                    <i class="fa fa-user"></i>
+                    Send To
+                </label>
+                <input type="text" placeholder="Enter email?">
+                <button class="modal-pay-btn">PAY
+                    <i class="fa fa-check"></i>
+                </button>
+                <button class="modal-close-btn js-close-btn">
+                    Close
+                    <i class="fa fa-remove"></i>
+                </button>
+                <p>Need <a class="help" href="#">help?</a></p>
+            </div>
+            <div class="footer-modal">
+            </div>
+        </div>
+    </div>
+    <!-- End Ticket Modal -->
 
+    <script>
+        const openModalBtns = document.querySelectorAll('.js-buy-btn')
+        const closeModalBtns = document.querySelectorAll('.js-close-btn')
+        const Modal = document.querySelector('.js-modal')
+        const ticketModal = document.querySelector('.js-ticket-modal')
+        // Mở modal - Add class ticket-modal-section-open vào Modal
+        function openTicketModal() {
+            Modal.classList.add('ticket-modal-section-open')
+        }
+        // Đóng modal - Remove class ticket-modal-section-open khỏi Modal
+        function closeTicketModal() {
+            Modal.classList.remove('ticket-modal-section-open')
+        }
+        //for các button mở modal và add lắng nghe hành vi click
+        for (const openModalBtn of openModalBtns) {
+            openModalBtn.addEventListener('click', openTicketModal)
+        }
+        //for các button đóng modal
+        for (const closeModalBtn of closeModalBtns){
+            closeModalBtn.addEventListener('click', closeTicketModal)
+        }
+        //Xử lý tránh tràn Event Listener từ element con
+        ticketModal.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+    </script>
+</body>
 </html>
