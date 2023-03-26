@@ -596,35 +596,36 @@ https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 
 ### 89. Tour tickets CSS
 
-19:27
+- done
 
 ### 90. Tour places CSS
 
-24:10
+- done
 
 ### 91. Buy tickets modal
 
-43:07
+- Add modal
 
 ### 92. Buy tickets modal Javascript logic
 
-27:49
+- Add JS to open and close modal
+-   prevent bubbling eventlistening
 
 ### 93. Row - columns layout
 
-15:26
-
+- row col layout
 ### 94. Contact form CSS
 
-24:14
+- ứng dụng row col layout
 
 ### 95. Map, footer CSS
 
-15:09
+- done
 
 ### 96. Review
 
-06:23
+- add link to nav
+- scroll-behavior: smooth.
 
 ### 97. Feedback: Độ dài 1 video bao nhiêu là phù hợp?
 
