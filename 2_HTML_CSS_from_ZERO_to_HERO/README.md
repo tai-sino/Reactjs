@@ -633,19 +633,38 @@ https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 
 ### 98. Responsive là gì?
 
-05:50
+- responsive design: thiết kế cho giao diện tương thích với mọi loại kích thước màn hình
 
 ### 99. Media queries?
-
-15:38
+- PC
+    - @media (min-width: 1024px) {}
+- Tablet
+    - @media (max-width: 1023px) and (min-width: 741px) {}
+- Mobile
+    - @media (max-width: 740px) {}
 
 ### 100. Tablet responsive
 
-09:47
+- trong project The_band này tương tự PC => skip
 
 ### 101. Mobile menu responsive
 
-35:39
+- đổi menu
+    - overflow: hidden/visible
+    JS: ( các keyword đc học trong bài này)
+        - const/let (no var)
+        - querySelector('.class/...') => return element
+        - querySelectorAll('.class/...') => return static nodelist
+        - getElementById('ID') => return element
+        - getElementsByClassName('classname') => return ive HTML collection of elements
+        - classList/style/
+        - addEventListener('click', function)
+        - function fname(){}
+        - alert
+        - console.log
+        - preventDefault()
+        - javascript:;
+
 
 ### 102. Mobile menu fix bug
 

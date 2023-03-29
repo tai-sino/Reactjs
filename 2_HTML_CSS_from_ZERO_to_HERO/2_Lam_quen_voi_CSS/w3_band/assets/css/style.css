@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 15px;
 
     /* variable */
 --header-height: 46.5px;
@@ -30,13 +31,19 @@ ul,li{
     src: url(/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/fonts/Lato-Regular.ttf);
   }
 
-.header {    
+#header {    
     height: var(--header-height);
-    background-color: #000;
     position: fixed;
     top: 0px;
     width: 100%;
     z-index: 1;
+    background-color: #000;
+   
+}
+#header::after{
+    display: block;
+    content: "";
+    clear: both;
 }
 
 /* Begin: Navigation */
@@ -44,7 +51,14 @@ ul,li{
     float: left;
     display: block;
     position: relative;
+    background-color: #000;
 }
+.nav ul::after{
+   display: block;
+   content: "";
+   clear: both;
+}
+
 .nav li a{
     display: block;
     color: #fff;
@@ -52,9 +66,10 @@ ul,li{
     padding: 0 24px;
     font-family: Lato;
     font-size: 15px;
-    text-transform: uppercase;
+    text-transform: uppercase;    
 }
-.nav li:hover a{
+
+.nav li a:hover{
    background-color: #ccc;
    color: #000;
 }
@@ -96,6 +111,9 @@ ul,li{
 }
 .button-search:hover{
     background-color: #f44336;
+}
+.button-menu{
+    display: none;
 }
 .button-search a{
     line-height: var(--header-height);
@@ -317,6 +335,8 @@ color: #fff;
     border: 1px solid #ccc;
     padding: 8px;
     width: 100%;
+    line-height: 1.5;
+    font-size: 15px;
 }
 .contact-input-info{
     margin: 0 -16px 8px;

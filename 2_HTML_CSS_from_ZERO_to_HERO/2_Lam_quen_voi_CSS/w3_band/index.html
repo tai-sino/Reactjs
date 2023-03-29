@@ -7,28 +7,33 @@
     <meta name="viewport" content="width= device-width
     , initial-scale=1.0">
     <title>W3_TheBand</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
-    <div class="main">
+    <div id ="main">
         <!-- Begin: Header -->
-        <div class="header">
+        <div id="header">
             <!-- Begin: Navigation -->
-            <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#band">Band</a></li>
-                <li><a href="#tour">Tour</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav js-menu">
+                <li> 
+                    <div class="button-menu js-menu-btn">
+                        <a href="javascript:;"><i class="fa fa-bars"></i></a>
+                    </div>
+                        <a href="#">Home</a>
+                </li>
+                <li><a class="js-close-menu" href="#band">Band</a></li>
+                <li><a class="js-close-menu" href="#tour">Tour</a></li>
+                <li><a class="js-close-menu" href="#contact">Contact</a></li>
                 <li>
-                    <a href="#">More <i class="fa fa-caret-down"></i></a>
-
+                    <a href="javascript:;">More <i class="fa fa-caret-down"></i></a>
                     <ul class="subnav">
-                        <li><a href="#">Merchandise</a></li>
-                        <li><a href="#">Extras</a></li>
-                        <li><a href="#">Media</a></li>
+                        <li><a href="javascript:;">Merchandise</a></li>
+                        <li><a href="javascript:;">Extras</a></li>
+                        <li><a href="javascript:;">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -241,6 +246,10 @@
         const closeModalBtns = document.querySelectorAll('.js-close-btn')
         const Modal = document.querySelector('.js-modal')
         const ticketModal = document.querySelector('.js-ticket-modal')
+        const menu = document.getElementById('header')
+        const menuBtn = document.querySelector('.js-menu-btn')
+        const closeMenuBtns = document.querySelectorAll('.js-close-menu')
+
         // Mở modal - Add class ticket-modal-section-open vào Modal
         function openTicketModal() {
             Modal.classList.add('ticket-modal-section-open')
@@ -249,6 +258,17 @@
         function closeTicketModal() {
             Modal.classList.remove('ticket-modal-section-open')
         }
+        // Mở menu mobile
+        function openMenuBtn(){
+            if ( menu.style.overflow === "visible"){
+                menu.style.overflow = "hidden";
+            }
+            else{
+                menu.style.overflow = "visible";
+            }
+        }
+        // đóng menu khi move tới id
+       
         //for các button mở modal và add lắng nghe hành vi click
         for (const openModalBtn of openModalBtns) {
             openModalBtn.addEventListener('click', openTicketModal)
@@ -257,10 +277,22 @@
         for (const closeModalBtn of closeModalBtns){
             closeModalBtn.addEventListener('click', closeTicketModal)
         }
+        //for các tag a đóng menu
+        for ( const closeMenuBtn of closeMenuBtns){
+            closeMenuBtn.addEventListener('click',openMenuBtn )
+        }
         //Xử lý tránh tràn Event Listener từ element con
         ticketModal.addEventListener('click', function (event) {
             event.stopPropagation()
         })
+
+        //Xử lý event click menu btn
+        menuBtn.addEventListener('click', openMenuBtn)
+        
+        console.log(menu);
+
+
+
     </script>
 </body>
 </html>
