@@ -3,6 +3,10 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+<<<<<<< HEAD
+=======
+	font-size: 15px;
+>>>>>>> 1fb92ed3eab47c3210d1997de2a45954b7a50bd0
 
 	/* variable */
 	--header-height: 46.5px;
@@ -130,7 +134,12 @@ li {
 	position: relative;
 	margin-top: var(--header-height);
 	padding-top: 50%;
+<<<<<<< HEAD
 	background: url('../imgs/chicago.jpg') top center / contain;
+=======
+	background: url('/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/chicago.jpg')
+		top center / contain;
+>>>>>>> 1fb92ed3eab47c3210d1997de2a45954b7a50bd0
 }
 .slider .img-title {
 	position: absolute;
@@ -146,13 +155,19 @@ li {
 	margin: 10px 0;
 	font-weight: 400;
 	font-family: 'Segoe UI', Tahoma, Arial, Verdana, sans-serif;
+<<<<<<< HEAD
 	text-shadow: 0 0 2px black;
+=======
+>>>>>>> 1fb92ed3eab47c3210d1997de2a45954b7a50bd0
 }
 .slider .img-title p {
 	font-size: 15px;
 	margin: 15px 0;
 	font-family: Lato;
+<<<<<<< HEAD
 	text-shadow: 0 0 2px black;
+=======
+>>>>>>> 1fb92ed3eab47c3210d1997de2a45954b7a50bd0
 }
 /* End: Slider */
 

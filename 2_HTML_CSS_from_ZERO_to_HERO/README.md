@@ -1,39 +1,45 @@
 # HTML CSS TỪ ZERO ĐẾN HERO
 
 ## I. BẮT ĐẦU
+
 ### 1. Bạn sẽ làm được gì sau khóa học?
- 1. Xây dựng được giao diện website
- 2. Phân tích giao diện website
- 3. Đặt tên class theo chuẩn BEM
- 4. Xây dựng layout với Flexbox
- 5. Làm hiệu ứng với animation
- 6. Xây dựng giao diện responsive
- 7. Rất nhiều các kỹ thuật nâng cao khác
+
+1.  Xây dựng được giao diện website
+2.  Phân tích giao diện website
+3.  Đặt tên class theo chuẩn BEM
+4.  Xây dựng layout với Flexbox
+5.  Làm hiệu ứng với animation
+6.  Xây dựng giao diện responsive
+7.  Rất nhiều các kỹ thuật nâng cao khác
 
 ### 2. Tìm hiểu về HTML, CSS
- 1. HTML là chữ viết tắt của Hypertext Markup Language
- 2. CSS là ngôn ngữ tạo phong cách cho trang web - Cascading Style Sheet languague.
+
+1.  HTML là chữ viết tắt của Hypertext Markup Language
+2.  CSS là ngôn ngữ tạo phong cách cho trang web - Cascading Style Sheet languague.
 
 ### 3. Làm quen với Dev tools
 
- - Dev tool (F12) trong Google Chrome.
- - Tab element, network, source,...
+- Dev tool (F12) trong Google Chrome.
+- Tab element, network, source,...
 
 ### 4. Cài đặt VS Code, Page Ruler extension
- - Vscode + live server
- - Smart page ruler
- - <https://codeforgeek.com/best-visual-studio-code-extensions-web-development/>
- - Best usefull hotkey
- - <https://cult.honeypot.io/reads/20-vs-code-shortcuts-developers/>
+
+- Vscode + live server
+- Smart page ruler
+- <https://codeforgeek.com/best-visual-studio-code-extensions-web-development/>
+- Best usefull hotkey
+- <https://cult.honeypot.io/reads/20-vs-code-shortcuts-developers/>
 
 ### 5. Lưu ý khi học lập trình tại F8
- <https://fullstack.edu.vn/learning/html-css?id=4fa93b5a-f764-443f-8991-aeeac35ec986>
+
+<https://fullstack.edu.vn/learning/html-css?id=4fa93b5a-f764-443f-8991-aeeac35ec986>
 
 ## II. LÀM QUEN VỚI HTML
 
 ### 6. Cấu trúc của 1 file HTML
 
-><!DOCTYPE html>
+> <!DOCTYPE html>
+
 <html lang="en">
  <!-- head setting -->
 <head>
@@ -62,6 +68,7 @@
 ### 10. Ví dụ comments trong HTML
 
 - Pass
+
 ### 11. Các thẻ HTML thông dụng
 
 11:08
@@ -71,17 +78,17 @@
 1. h1 - h6: Heading 1-6
 2. p (paragraph): đoạn văn
 3. img (image): hình ảnh
-    - src: link ảnh
-    - alt: nếu hình ảnh lỗi thì hiển thị text
+   - src: link ảnh
+   - alt: nếu hình ảnh lỗi thì hiển thị text
 4. a (anchor): thẻ gán link
-    - href: link nguồn
+   - href: link nguồn
 5. ul/ol (unordered list/ordered list), li (list item):
 6. table:
-    - thead (table  heading)
-        - th: hiển thị heading dưới dạng bold và center-align
-    - tbody (table  body)
-        - tr (table row): Các dòng của table, tối thiểu cần có 1 dòng.
-        - td (table cell): các ô trên một dòng.
+   - thead (table heading)
+     - th: hiển thị heading dưới dạng bold và center-align
+   - tbody (table body)
+     - tr (table row): Các dòng của table, tối thiểu cần có 1 dòng.
+     - td (table cell): các ô trên một dòng.
 7. input: <https://www.w3schools.com/tags/tag_input.asp>
 8. button:<<https://www.w3schools.com/tags/tag_button.asp>
 9. div: tạo 1 khổi giúp gom gọn các tag.
@@ -101,7 +108,7 @@
 ### 16. Attribute trong HTML là gì?
 
 - Attribute là thuộc tính của 1 tag và nằm trong thẻ mở.
-    - vd: title, onclick, style,...
+  - vd: title, onclick, style,...
 
 ### 17. Bài tập sử dụng Attribute #1
 
@@ -113,6 +120,7 @@
 - Quy tắc đặt tên
 
 ### 19. Feedback: Bạn đang sử dụng hệ điều hành nào?
+
 - Done
 
 ## LÀM QUEN VỚI CSS
@@ -120,11 +128,10 @@
 ### 20. Sử dụng CSS trong HTML
 
 - Có 3 cách sử dựng CSS
-    - External (link file CSS để format HTML)
-    - Internal (CSS được viết trong tag Style và nằm trong phần head của file HTML)
-    - Inline ( sử dụng attribute style để viết CSS format HTML inline trên tag)
+  - External (link file CSS để format HTML)
+  - Internal (CSS được viết trong tag Style và nằm trong phần head của file HTML)
+  - Inline ( sử dụng attribute style để viết CSS format HTML inline trên tag)
 - Inline có độ ưu tiên cao nhất, tuỳ theo thứ tự của External và Internal trong phần head, CSS nào áp dụng sau sẽ đè lên cái trước và được hiển thị
-
 
 ### 21. Thực hành sử dụng CSS internal
 
@@ -134,7 +141,7 @@
 
 - Thuộc tính ID dùng để tạo 1 định danh duy nhất cho 1 element
 - Thuộc tính Class dùng để tạo 1 lớp các element có cùng 1 định dạng CSS, 1 thẻ có thể có nhiều class và được cách nhau bằng khoảng trắng
-    - ID sẽ được ưu tiên hơn so với class trong trường hợp cả 2 đều đc CSS Selector trỏ đến. phần CSS của ID sẽ được hiển thị.
+  - ID sẽ được ưu tiên hơn so với class trong trường hợp cả 2 đều đc CSS Selector trỏ đến. phần CSS của ID sẽ được hiển thị.
 
 ### 23. Thực hành sử dụng CSS external
 
@@ -147,12 +154,12 @@
 ### 25. Ví dụ sử dụng CSS selectors cơ bản
 
 - class="first second"
-    - .first.second {} (ko có khoảng trắng, dùng dê style cho 1 elemend có nhiều class)
--  div class="parent"
-    - p
-    - p class="child"
-        - .parent p => style cho tất cả tag p nằm trong class parent
-        - .parent .child => style cho class child nằm bên trong class parent (có khoảng trắng ở giữa)
+  - .first.second {} (ko có khoảng trắng, dùng dê style cho 1 elemend có nhiều class)
+- div class="parent"
+  - p
+  - p class="child"
+    - .parent p => style cho tất cả tag p nằm trong class parent
+    - .parent .child => style cho class child nằm bên trong class parent (có khoảng trắng ở giữa)
 
 [![css-selector](assets/../../assets/images/css-selector.png)]
 
@@ -163,15 +170,15 @@
 ### 27. Độ ưu tiên trong CSS
 
 - Priority
-    1.  Internal = External
-    2.  !important = 10000p
-    3.  Inline 1000p
-    4.  ID = 100p
-    5.  Class = 10p
-    6.  Tag = 1p
-    7.  Universal (*) and Inherit (html tag) = 0p
-    8.  Equal specificity. Điểm giống nhau thì sẽ tính cái nào đặt sau!
-    9.  Tổng kết: càng chi tiết, càng nhiều điểm và càng được ưu tiên.
+  1.  Internal = External
+  2.  !important = 10000p
+  3.  Inline 1000p
+  4.  ID = 100p
+  5.  Class = 10p
+  6.  Tag = 1p
+  7.  Universal (\*) and Inherit (html tag) = 0p
+  8.  Equal specificity. Điểm giống nhau thì sẽ tính cái nào đặt sau!
+  9.  Tổng kết: càng chi tiết, càng nhiều điểm và càng được ưu tiên.
 
 ### 28. Thực hành độ ưu tiên trong CSS #1
 
@@ -180,14 +187,15 @@
 ### 29. Sử dụng biến trong CSS
 
 - Global variable CSS
-    - :root {
-     --main-color: red; //đặt biến main color là red và có phạm vi ảnh hưởng global
-        }
+
+  - :root {
+    --main-color: red; //đặt biến main color là red và có phạm vi ảnh hưởng global
+    }
 
 - Local variable CSS
-    - h1{
-        --local-color: blue; //tạo biến local color là blue và chỉ ảnh hưởng trong phạm vi tag h1)
-        }
+  - h1{
+    --local-color: blue; //tạo biến local color là blue và chỉ ảnh hưởng trong phạm vi tag h1)
+    }
 
 ### 30. Vấn đề khi không sử dụng biến CSS
 
@@ -200,24 +208,25 @@
 ### 32. Các đơn vị trong CSS
 
 - Absolute units:
-    1. px
-    2. pt
-    3. cm
-    4. mm
-    5. inch
-    6. pc
+  1. px
+  2. pt
+  3. cm
+  4. mm
+  5. inch
+  6. pc
 - Relative units:
-    1. %
-    2. rem
-    3. em
-    4. vw
-    5. vh
-    6. vmin
-    7. vmax
-    8. ex
-    9. ch
+  1. %
+  2. rem
+  3. em
+  4. vw
+  5. vh
+  6. vmin
+  7. vmax
+  8. ex
+  9. ch
 
 Các Unit thường dùng:
+
 - Pixel giữa pixel CSS và pixel trên device là khác nhau phụ thuộc vào resolution của device. <https://www.ironin.it/blog/css-resolution-and-device-resolution-difference.html#:~:text=The%20difference%20between%20CSS%20resolution%20and%20device%20resolution,-With%20the%20rising&text=Device%20screen%20resolution%20is%20the,ppcm%20or%20pixels%2Fcm).>
 - %: percent sẽ dựa vào w và h của element
 - rem: rem sẽ kế thừa font-size từ tag html (global). mặc định 100% = 16px (sử dụng nhiều để làm responsive website)
@@ -231,8 +240,8 @@ Các Unit thường dùng:
 
 ### 34. Reset margin được đặt mặc định
 
--  margin: 0; /* Loại bỏ margin mặc định */
-- padding: 0; /* Loại bỏ padding mặc định */
+- margin: 0; /_ Loại bỏ margin mặc định _/
+- padding: 0; /_ Loại bỏ padding mặc định _/
 
 ### 35. Thực hành reset CSS
 
@@ -277,14 +286,14 @@ Các Unit thường dùng:
 ### 43. Pseudo classes trong CSS
 
 - CSS pseudo-classes
-    - :root
-    - :hover
-    - :active
-    - :first-child
-    - :last-child
-    - ...
-    - <https://www.w3schools.com/css/css_pseudo_classes.asp>
-    -  phải có content:"";display:block;
+  - :root
+  - :hover
+  - :active
+  - :first-child
+  - :last-child
+  - ...
+  - <https://www.w3schools.com/css/css_pseudo_classes.asp>
+  - phải có content:"";display:block;
 
 ### 44. Thực hành sử dụng :hover
 
@@ -293,14 +302,14 @@ Các Unit thường dùng:
 ### 45. Pseudo elements trong CSS
 
 - CSS pseudo-element
-    - ::before
-    - ::after
-    - ::first-letter
-    - ::first-line
-    - ::selection
-    - ...
-    - <https://www.w3schools.com/css/css_pseudo_elements.asp>
-    - phải có content:"";display:block;
+  - ::before
+  - ::after
+  - ::first-letter
+  - ::first-line
+  - ::selection
+  - ...
+  - <https://www.w3schools.com/css/css_pseudo_elements.asp>
+  - phải có content:"";display:block;
 
 ### 46. Thực hành sử dụng pseudo elements
 
@@ -313,10 +322,10 @@ Các Unit thường dùng:
 ### 47. Thuộc tính padding (đệm)
 
 - padding:
-    - All (Top + Right + Bottom + Left)    
-    - Top + Bottom  /  Right + Left
-    - Top  /  Right + Left  /  Bottom
-    - Top  /  Right  /  Bottom  /  Left
+  - All (Top + Right + Bottom + Left)
+  - Top + Bottom / Right + Left
+  - Top / Right + Left / Bottom
+  - Top / Right / Bottom / Left
 
 ### 48. Thực hành sử dụng padding #1
 
@@ -329,10 +338,10 @@ Các Unit thường dùng:
 ### 50. Thuộc tính border (đường viền)
 
 - border attribute:
-    - border-width:
-    - border-stype:
-    - border-color:
-    - ==> border: $width $style $color;
+  - border-width:
+  - border-stype:
+  - border-color:
+  - ==> border: $width $style $color;
 
 ### 51. Thực hành sử dụng border #1
 
@@ -340,11 +349,11 @@ Các Unit thường dùng:
 
 ### 52. Thuộc tính margin (khoảng cách lề)
 
-- margin attribute: 
-    - margin-width:
-    - margin-stype:
-    - margin-color:
-    - ==> margin: $width $style $color;
+- margin attribute:
+  - margin-width:
+  - margin-stype:
+  - margin-color:
+  - ==> margin: $width $style $color;
 
 ### 53. Thực hành sử dụng margin #1
 
@@ -353,20 +362,22 @@ Các Unit thường dùng:
 ### 54. Thuộc tính box-sizing
 
 - box-sizing attribute:
-    - content-box: default.
-    - border-box: sử dụng nhiều nhất, để biến content thành box giữ nguyên kích thước width & height.
-    - unset: trở về mặc định
+  - content-box: default.
+  - border-box: sử dụng nhiều nhất, để biến content thành box giữ nguyên kích thước width & height.
+  - unset: trở về mặc định
 
 ### 55. Thực hành sử dụng box-sizing
 
 - pass
+
 ## V. THUỘC TÍNH TẠO NỀN
 
 ### 56. Thuộc tính background-image
 
 ![Background-image](/assets/images/background-image.png)
+
 - background-image: url(...);
-    - background-image: linear-gradient($degree(0,90deg,...), $color1, $color2)
+  - background-image: linear-gradient($degree(0,90deg,...), $color1, $color2)
 - background-size: 100%; (100% auto)
 - background-repeat: no-reapeat;
 
@@ -377,8 +388,8 @@ Các Unit thường dùng:
 ### 58. Thuộc tính background-size với cover, contain
 
 - background-size:
-    - contain: lấy chiều dài cạnh ngắn nhất làm 100%.(ảnh luôn hiển thị đầy đủ - có thể hiển thị phần background ngoài ảnh)
-    - cover: lấy chiều dài cạnh dài nhất làm 100% bất kể ảnh có bị che khuất hay ko. (có thể hiển thị hình ảnh tràn ra ngoài màn hình - ko thể nhìn thấy background)
+  - contain: lấy chiều dài cạnh ngắn nhất làm 100%.(ảnh luôn hiển thị đầy đủ - có thể hiển thị phần background ngoài ảnh)
+  - cover: lấy chiều dài cạnh dài nhất làm 100% bất kể ảnh có bị che khuất hay ko. (có thể hiển thị hình ảnh tràn ra ngoài màn hình - ko thể nhìn thấy background)
 
 ### 59. Sử dụng thuộc tính background-size
 
@@ -387,9 +398,9 @@ Các Unit thường dùng:
 ### 60. Thuộc tính background-origin
 
 - background-origin ( tương tự background-clip )
-    - border-box:  hiển thị ảnh từ viền ngoài vùng border vào trong.
-    - padding-box: hiển thị ảnh từ viền ngoài vùng padding vào trong. (default)
-    - content-box: hiển thị ảnh từ viền ngoài vùng content vào trong.
+  - border-box: hiển thị ảnh từ viền ngoài vùng border vào trong.
+  - padding-box: hiển thị ảnh từ viền ngoài vùng padding vào trong. (default)
+  - content-box: hiển thị ảnh từ viền ngoài vùng content vào trong.
 
 ### 61. Sử dụng thuộc tính background-origin
 
@@ -404,32 +415,33 @@ Các Unit thường dùng:
 - pass
 
 ### 64. Cú pháp "shorthand" cho background
+
 - cách rút gọn background-image
 - background: [$color / url(image)] no-repeat center / contain;
-    - [$color / url(image)] color hoặc img
-    - background-repeat: no-repeat;
-    - background-position: center / background-size: contain;
-        - dấu / quan trọng.
+  - [$color / url(image)] color hoặc img
+  - background-repeat: no-repeat;
+  - background-position: center / background-size: contain;
+    - dấu / quan trọng.
+
 ### 65. Sử dụng cú pháp "shorthand" cho background
 
 - pass
 
 ## VI. THUỘC TÍNH VỊ TRÍ
 
-- Position: 
-    - Relative: neo tại vị trí hiện tại - tương đối.
-    - Absolute: neo tại vị trí hiện tại - tuyệt đối 
-    - Fixed: Neo phụ thuốc vào khung trình duyệt
-    - Sticky: Bám dính vào khung trình duyệt (ko khuyến khích sử dụng)
-        - Các thuộc tính top,left,bottom,right chỉ hoạt động khi có thuộc tính position.
-        
+- Position:
+  - Relative: neo tại vị trí hiện tại - tương đối.
+  - Absolute: neo tại vị trí hiện tại - tuyệt đối
+  - Fixed: Neo phụ thuốc vào khung trình duyệt
+  - Sticky: Bám dính vào khung trình duyệt (ko khuyến khích sử dụng)
+    - Các thuộc tính top,left,bottom,right chỉ hoạt động khi có thuộc tính position.
 
 ### 66. CSS position relative
 
 - Position: relative;
-    - top: 100px;
-    - left: 100px;
-    -
+  - top: 100px;
+  - left: 100px;
+  -
 
 ### 67. Thực hành CSS position relative
 
@@ -438,9 +450,9 @@ Các Unit thường dùng:
 ### 68. CSS position absolute
 
 - Position: absolute; Sẽ neo vào thẻ cha gần nhất có thuộc tính Position(Bất kể loại nào).
-    - Các thuộc tính top,left,bottom,right chỉ hoạt động khi có thuộc tính position.
-    - Nếu cả 4 thuộc tính trên = 0, Thẻ sẽ phủ toàn bộ thẻ cha.
-    - Ko thể sử dụng 2 thuộc tính đối nghịch cùng lúc. ( top # bottom,..)
+  - Các thuộc tính top,left,bottom,right chỉ hoạt động khi có thuộc tính position.
+  - Nếu cả 4 thuộc tính trên = 0, Thẻ sẽ phủ toàn bộ thẻ cha.
+  - Ko thể sử dụng 2 thuộc tính đối nghịch cùng lúc. ( top # bottom,..)
 
 ### 69. Thực hành CSS position absolute
 
@@ -449,18 +461,19 @@ Các Unit thường dùng:
 ### 70. CSS position fixed
 
 - Position: fixed; Sẽ neo vào khung trình duyệt 1 vị trí cố định.
-    - Thường sẽ neo vào top hoặc bottom, có thể sử dụng cùng lúc 2 thuộc tính đối nghịch.
+  - Thường sẽ neo vào top hoặc bottom, có thể sử dụng cùng lúc 2 thuộc tính đối nghịch.
 
 ### 71. Thực hành CSS position fixed
 
-- pass 
+- pass
 
 ### 72. CSS position sticky
 
 - Position: sticky; Position: -webkit-sticky; (Safari)
-    - Ko nên sử dụng vì ko hỗ trợ tốt trên nhiều trình duyệt ( chỉ hỗ trợ tốt firefox và safari)
-    - Có thể thay thế bằng Position: Fixed và javascript.
-    - Công dụng: Khi scroll tới giới hạn sẽ dừng tại vị trí đc neo.
+  - Ko nên sử dụng vì ko hỗ trợ tốt trên nhiều trình duyệt ( chỉ hỗ trợ tốt firefox và safari)
+  - Có thể thay thế bằng Position: Fixed và javascript.
+  - Công dụng: Khi scroll tới giới hạn sẽ dừng tại vị trí đc neo.
+
 ### 73. Thực hành CSS position sticky
 
 - pass
@@ -468,25 +481,20 @@ Các Unit thường dùng:
 ### 74. Các cách căn giữa trong CSS
 
 - Cách 1:
-    //tạo biến cục bộ lưu giá trị độ cao
-    --height-value: 100px;
-    - height: var(--height-value);
-    - text-align: center;
-    - line-height: var(--height-value);
+  //tạo biến cục bộ lưu giá trị độ cao
+  --height-value: 100px;
+
+  - height: var(--height-value);
+  - text-align: center;
+  - line-height: var(--height-value);
 
 - Cách 2:
-    - display: flex;
-        - align-items: center;
-        - justify-content: center;
-            - Có thể sử dụng để căn giữa cùng lúc nhiều đối tượng.
+  - display: flex; - align-items: center; - justify-content: center; - Có thể sử dụng để căn giữa cùng lúc nhiều đối tượng.
     hoặc parent = > display:flex;
-        child = > margin: auto;
+    child = > margin: auto;
 - Cách 3:
-    parent=> position: relative;
-    child => position: absolute;
-                - top: 50%;
-                - left: 50%;
-                - tranform: translate(-50%,-50%);
+  parent=> position: relative;
+  child => position: absolute; - top: 50%; - left: 50%; - tranform: translate(-50%,-50%);
 
 ### 75. Thực hành cách căn giữa trong CSS
 
@@ -494,11 +502,12 @@ Các Unit thường dùng:
 
 ### 76. Hiển thị ảnh dự phòng khi ảnh chính lỗi
 
- - Đối với <img> attribute onerror
-    - <img src="/img1" onerror="this.src='/img2'">
- - Dối với background img trong thẻ <div>.
-    -   background-image: url(img1) , url(img2);
-        Nếu img1 lỗi sẽ hiển thị img2
+- Đối với <img> attribute onerror
+  - <img src="/img1" onerror="this.src='/img2'">
+- Dối với background img trong thẻ <div>.
+  - background-image: url(img1) , url(img2);
+    Nếu img1 lỗi sẽ hiển thị img2
+
 ### 77. Ôn tập hiển thị ảnh dự phòng khi ảnh chính lỗi
 
 - pass
@@ -506,40 +515,28 @@ Các Unit thường dùng:
 ### 78. Giới thiệu dự án
 
 https://www.w3schools.com/w3css/tryw3css_templates_band.htm
+
 - Các bước thực hiện:
-    - Phân tích
-    - Dựng base (xây móng)
-    - Xây dựng từng phần theo phân tích
-    - Hoàn thiện
+  - Phân tích
+  - Dựng base (xây móng)
+  - Xây dựng từng phần theo phân tích
+  - Hoàn thiện
 
 ### 79. Phân biệt & gọi tên các thành phần
 
 - Các thành phần trong 1 website:
-    - Header        Đầu trang
-    - Navigation    Điều hướng
-    - Banner        Tất cả các hình ảnh
-    - Breadcrumb    Định vị ví trí website (Index > Child page > ...)
-    - Sidebar       Cột bên trái hoặc bên phải trang web ( có thể là navigation hay bất kì thành phầnn nào)
-    - Slider        Các thành phần có thể trượt
-    - Content       Nội dung chính của trang web, nằm ở phần trung tâm
-    - Footer        Chân trang
+  - Header Đầu trang
+  - Navigation Điều hướng
+  - Banner Tất cả các hình ảnh
+  - Breadcrumb Định vị ví trí website (Index > Child page > ...)
+  - Sidebar Cột bên trái hoặc bên phải trang web ( có thể là navigation hay bất kì thành phầnn nào)
+  - Slider Các thành phần có thể trượt
+  - Content Nội dung chính của trang web, nằm ở phần trung tâm
+  - Footer Chân trang
 
 ### 80. Phân tích dự án
 
-https://www.w3schools.com/w3css/tryw3css_templates_band.htm
-    - Header
-        - Navigation
-        - Dropdown menu
-        - Search
-    - Slider
-        - Image + Info
-    - Content
-        - Band
-        - Tour
-        - Contact
-        - Banner
-    - Footer
-        - Social Page
+- https://www.w3schools.com/w3css/tryw3css_templates_band.htm - Header - Navigation - Dropdown menu - Search - Slider - Image + Info - Content - Band - Tour - Contact - Banner - Footer - Social Page
 
 ### 81. Tạo project base
 
@@ -559,40 +556,36 @@ https://www.w3schools.com/w3css/tryw3css_templates_band.htm
         - Màu sắc
         - Kiểu dáng ( font, hình dạng,...)
 
-    
-
 ### 83. Navigation CSS
 
 - Thực hành Navigation, một số tag và thuộc tính mới
-    - text-transform: uppercase;
-    - box-shadow: 0 0px 10px 0 rgba(0,0,0,0.3); 
+  - text-transform: uppercase;
+  - box-shadow: 0 0px 10px 0 rgba(0,0,0,0.3);
+
 ### 84. Header search CSS
 
- - Thực hành Header search
+- Thực hành Header search
 
 ### 85. Header fixed CSS
 
- - Thực hành Header fixed
+- Thực hành Header fixed
 
 ### 86. Slider CSS
 
- - Thực hành background img
-        - position: absolute;
-        - left: 50%;
-        - transform: translateX(-50%);
+- Thực hành background img - position: absolute; - left: 50%; - transform: translateX(-50%);
 
 ### 87. About section CSS
 
     - opacity: 0.60;
     - width: calc(100%/3);
-    
+
 ### 88. Team section CSS
 
 - border-radius: 4px;
-    - .member-section::after 
-    - content: "";
-    - display: block;
-    - clear: both;
+  - .member-section::after
+  - content: "";
+  - display: block;
+  - clear: both;
 
 ### 89. Tour tickets CSS
 
@@ -609,11 +602,12 @@ https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 ### 92. Buy tickets modal Javascript logic
 
 - Add JS to open and close modal
--   prevent bubbling eventlistening
+- prevent bubbling eventlistening
 
 ### 93. Row - columns layout
 
 - row col layout
+
 ### 94. Contact form CSS
 
 - ứng dụng row col layout
@@ -636,12 +630,13 @@ https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 - responsive design: thiết kế cho giao diện tương thích với mọi loại kích thước màn hình
 
 ### 99. Media queries?
+
 - PC
-    - @media (min-width: 1024px) {}
+  - @media (min-width: 1024px) {}
 - Tablet
-    - @media (max-width: 1023px) and (min-width: 741px) {}
+  - @media (max-width: 1023px) and (min-width: 741px) {}
 - Mobile
-    - @media (max-width: 740px) {}
+  - @media (max-width: 740px) {}
 
 ### 100. Tablet responsive
 
@@ -650,21 +645,8 @@ https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 ### 101. Mobile menu responsive
 
 - đổi menu
-    - overflow: hidden/visible
-    JS: ( các keyword đc học trong bài này)
-        - const/let (no var)
-        - querySelector('.class/...') => return element
-        - querySelectorAll('.class/...') => return static nodelist
-        - getElementById('ID') => return element
-        - getElementsByClassName('classname') => return ive HTML collection of elements
-        - classList/style/
-        - addEventListener('click', function)
-        - function fname(){}
-        - alert
-        - console.log
-        - preventDefault()
-        - javascript:;
-
+  - overflow: hidden/visible
+    JS: ( các keyword đc học trong bài này) - const/let (no var) - querySelector('.class/...') => return element - querySelectorAll('.class/...') => return static nodelist - getElementById('ID') => return element - getElementsByClassName('classname') => return ive HTML collection of elements - classList/style/ - addEventListener('click', function) - function fname(){} - alert - console.log - preventDefault()/ stopPropagation() - javascript:;
 
 ### 102. Mobile menu fix bug
 
