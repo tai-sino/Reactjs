@@ -13,17 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
 </head>
+
 <body>
-    <div id ="main">
+    <div id="main">
         <!-- Begin: Header -->
         <div id="header">
             <!-- Begin: Navigation -->
             <ul class="nav js-menu">
-                <li> 
+                <li>
                     <div class="button-menu js-menu-btn">
                         <a href="javascript:;"><i class="fa fa-bars"></i></a>
                     </div>
-                        <a href="#">Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li><a class="js-close-menu" href="#band">Band</a></li>
                 <li><a class="js-close-menu" href="#tour">Tour</a></li>
@@ -51,7 +52,6 @@
         <div class="slider">
             <div class="img-title">
                 <h3>Chicago</h3>
-                </p>
                 <p><b>Thank you, Chicago - The night we won't forget.</b></p>
             </div>
         </div>
@@ -142,12 +142,8 @@
                                 <button class="ticket-btn js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
-
-
                     </div>
                     <!-- End ticket Section -->
-
-
                 </div>
             </div>
             <!-- End: Tour Section -->
@@ -191,7 +187,7 @@
         </div>
         <!-- End: Container -->
 
-        <!-- Begin: Fotter -->
+        <!-- Begin: Footer -->
         <div class="footer">
             <i class="fa fa-facebook-official w3-hover-opacity"></i>
             <i class="fa fa-instagram "></i>
@@ -201,7 +197,7 @@
             <i class="fa fa-linkedin "></i>
             <p>Powered by <a href="#">taisino291</a></p>
         </div>
-        <!-- End: Fotter -->
+        <!-- End: Footer -->
     </div>
     <!-- Begin Ticket Modal -->
     <div class="ticket-modal-section js-modal js-close-btn">
@@ -259,27 +255,27 @@
             Modal.classList.remove('ticket-modal-section-open')
         }
         // Mở menu mobile
-        function openMenuBtn(){
-            if ( menu.style.overflow === "visible"){
+        function openMenuBtn() {
+            if (menu.style.overflow === "visible") {
                 menu.style.overflow = "hidden";
             }
-            else{
+            else {
                 menu.style.overflow = "visible";
             }
         }
         // đóng menu khi move tới id
-       
+
         //for các button mở modal và add lắng nghe hành vi click
         for (const openModalBtn of openModalBtns) {
             openModalBtn.addEventListener('click', openTicketModal)
         }
         //for các button đóng modal
-        for (const closeModalBtn of closeModalBtns){
+        for (const closeModalBtn of closeModalBtns) {
             closeModalBtn.addEventListener('click', closeTicketModal)
         }
         //for các tag a đóng menu
-        for ( const closeMenuBtn of closeMenuBtns){
-            closeMenuBtn.addEventListener('click',openMenuBtn )
+        for (const closeMenuBtn of closeMenuBtns) {
+            closeMenuBtn.addEventListener('click', openMenuBtn)
         }
         //Xử lý tránh tràn Event Listener từ element con
         ticketModal.addEventListener('click', function (event) {
@@ -288,11 +284,9 @@
 
         //Xử lý event click menu btn
         menuBtn.addEventListener('click', openMenuBtn)
-        
+
         console.log(menu);
-
-
-
     </script>
 </body>
+
 </html>
