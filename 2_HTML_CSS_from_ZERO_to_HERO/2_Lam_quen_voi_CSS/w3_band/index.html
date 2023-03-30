@@ -13,17 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
 </head>
+
 <body>
-    <div id ="main">
+    <div id="main">
         <!-- Begin: Header -->
         <div id="header">
             <!-- Begin: Navigation -->
             <ul class="nav js-menu">
-                <li> 
+                <li>
                     <div class="button-menu js-menu-btn">
                         <a href="javascript:;"><i class="fa fa-bars"></i></a>
                     </div>
-                        <a href="#">Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li><a class="js-close-menu" href="#band">Band</a></li>
                 <li><a class="js-close-menu" href="#tour">Tour</a></li>
@@ -51,7 +52,6 @@
         <div class="slider">
             <div class="img-title">
                 <h3>Chicago</h3>
-                </p>
                 <p><b>Thank you, Chicago - The night we won't forget.</b></p>
             </div>
         </div>
@@ -74,18 +74,15 @@
                 <div class="member-section">
                     <div class="member">
                         <p class="member-name">Name</p>
-                        <img src="/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/bandmember.jpg"
-                            alt="mem-img" class="mem-img">
+                        <img src="./assets/imgs/bandmember.jpg" alt="mem-img" class="mem-img">
                     </div>
                     <div class="member">
                         <p class="member-name">Name</p>
-                        <img src="/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/bandmember.jpg"
-                            alt="mem-img" class="mem-img">
+                        <img src="./assets/imgs/bandmember.jpg" alt="mem-img" class="mem-img">
                     </div>
                     <div class="member">
                         <p class="member-name">Name</p>
-                        <img src="/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/bandmember.jpg"
-                            alt="mem-img" class="mem-img">
+                        <img src="./assets/imgs/bandmember.jpg" alt="mem-img" class="mem-img">
                     </div>
                 </div>
             </div>
@@ -113,8 +110,7 @@
                     </ul>
                     <div class="ticket-section">
                         <div class="ticket-info js-ticket-info">
-                            <img src="/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/newyork.jpg"
-                                alt="">
+                            <img src="./assets/imgs/newyork.jpg" alt="">
                             <div class="ticket-text">
                                 <p><b>New York</b></p>
                                 <p class="ticket-text-opacity">Fri 27 Nov 2016</p>
@@ -123,8 +119,7 @@
                             </div>
                         </div>
                         <div class="ticket-info js-ticket-info">
-                            <img src="/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/paris.jpg"
-                                alt="">
+                            <img src="./assets/imgs/paris.jpg" alt="">
                             <div class="ticket-text">
                                 <p><b>Paris</b></p>
                                 <p class="ticket-text-opacity">Sat 28 Nov 2016</p>
@@ -133,8 +128,7 @@
                             </div>
                         </div>
                         <div class="ticket-info js-ticket-info">
-                            <img src="/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/sanfran.jpg"
-                                alt="">
+                            <img src="./assets/imgs/sanfran.jpg" alt="">
                             <div class="ticket-text">
                                 <p><b>San Francisco</b></p>
                                 <p class="ticket-text-opacity">Sun 29 Nov 2016</p>
@@ -184,8 +178,7 @@
 
             <!-- Begin: Banner Section -->
             <div class="banner-section">
-                <img src="/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/map.jpg" alt="map"
-                    class="banner">
+                <img src="./assets/imgs/map.jpg" alt="map" class="banner">
             </div>
             <!-- End: Banner Section -->
         </div>
@@ -259,27 +252,27 @@
             Modal.classList.remove('ticket-modal-section-open')
         }
         // Mở menu mobile
-        function openMenuBtn(){
-            if ( menu.style.overflow === "visible"){
+        function openMenuBtn() {
+            if (menu.style.overflow === "visible") {
                 menu.style.overflow = "hidden";
             }
-            else{
+            else {
                 menu.style.overflow = "visible";
             }
         }
         // đóng menu khi move tới id
-       
+
         //for các button mở modal và add lắng nghe hành vi click
         for (const openModalBtn of openModalBtns) {
             openModalBtn.addEventListener('click', openTicketModal)
         }
         //for các button đóng modal
-        for (const closeModalBtn of closeModalBtns){
+        for (const closeModalBtn of closeModalBtns) {
             closeModalBtn.addEventListener('click', closeTicketModal)
         }
         //for các tag a đóng menu
-        for ( const closeMenuBtn of closeMenuBtns){
-            closeMenuBtn.addEventListener('click',openMenuBtn )
+        for (const closeMenuBtn of closeMenuBtns) {
+            closeMenuBtn.addEventListener('click', openMenuBtn)
         }
         //Xử lý tránh tràn Event Listener từ element con
         ticketModal.addEventListener('click', function (event) {
@@ -288,11 +281,12 @@
 
         //Xử lý event click menu btn
         menuBtn.addEventListener('click', openMenuBtn)
-        
+
         console.log(menu);
 
 
 
     </script>
 </body>
+
 </html>
