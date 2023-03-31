@@ -161,7 +161,7 @@
     - .parent p => style cho tất cả tag p nằm trong class parent
     - .parent .child => style cho class child nằm bên trong class parent (có khoảng trắng ở giữa)
 
-[![css-selector](assets/../../assets/images/css-selector.png)]
+![css-selector](../assets/images/css-selector.png)
 
 ### 26. Thực hành CSS selectors #1
 
@@ -646,63 +646,107 @@ https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 
 - đổi menu
   - overflow: hidden/visible
-    JS: ( các keyword đc học trong bài này) - const/let (no var) - querySelector('.class/...') => return element - querySelectorAll('.class/...') => return static nodelist - getElementById('ID') => return element - getElementsByClassName('classname') => return ive HTML collection of elements - classList/style/ - addEventListener('click', function) - function fname(){} - alert - console.log - preventDefault()/ stopPropagation() - javascript:;
+  - JS: ( các keyword đc học trong bài này)
+  - const/let (no var)
+  - querySelector('.class/...') => return element
+  - querySelectorAll('.class/...') => return static nodelist
+  - getElementById('ID') => return element
+  - getElementsByClassName('classname') => return ive HTML collection of elements
+  - classList/style/
+  - addEventListener('click', function)
+  - function fname(){}
+  - alert
+  - console.log
+  - preventDefault()/ stopPropagation()
+  - javascript:;
 
 ### 102. Mobile menu fix bug
 
-12:37
+- done
 
 ### 103. Mobile submenu fix bug
 
-20:18
+- done
 
 ### 104. Content responsive
 
-14:43
+- done
 
 ### 105. Contact form responsive
 
-13:42
+- done
 
 ### 106. Review, fix UX
 
-21:26
+- done
 
 ### 107. Run and fix bug on mobile
 
-17:01
+- done
 
 ### 108. Fix bugs
 
-17:02
+- done
 
 ### 109. Giới thiệu Flexbox
 
-05:57
+- flex container
+  - flex items
+    - main size
+    - cross size
+  - main axis
+    - main start
+    - main end
+  - cross axis
+    - corss start
+    - cross end
+
+![flexbox-term](/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/flex_terms.png)
 
 ### 110. Ôn tập Flexbox #1
 
-00:20
+- done
 
 ### 111. Ôn tập Flexbox #2
 
-00:08
+- done
 
 ### 112. Thuộc tính CSS trong Flexbox
 
-06:26
+- CSS flexbox
+  - **display**: flex | inline-flex
+  - **flex container**
+    - **flex-flow (shorthand)**: flex-direction flex-wrap;
+      - **flex-direction**: row | column | row-reverse | column-reverse
+      - **flex-wrap**: nowrap | wrap | wrap-reverse
+    - **justify-content**: flex-start | flex-end | center | space-between | space-around | space-evenly
+    - **align-item**: center | flex-start | flex-end | stretch | baseline
+    - **align-content**: space-content | space-around | stretch | flex-start | flex-end
+  - **flex items**
+    - **align-self**: auto | stretch | center | baseline | flex-start | flex-end
+    - **flex (shorthand)**: flex-grow flex-shrink flex-basis;
+      - **flex-gow**: number;
+      - **flex-shrink**: number;
+      - **flex-basis**: length;
+    - **order**: number;
+
+![css-flexbox](/2_HTML_CSS_from_ZERO_to_HERO/2_Lam_quen_voi_CSS/w3_band/assets/imgs/css-flex-box.jpg)
 
 ### 113. Ôn tập Flexbox #3
 
-00:17
+- done
 
 ### 114. Học Flexbox qua ví dụ
 
-35:04
+- Làm các ví dụ.
+- Exercises
+  - https://codingfantasy.com/games/flexboxadventure/play DONE
+  - https://flexboxfroggy.com/ DONE
+  - http://www.flexboxdefense.com/ Skipped(waste time)
 
 ### 115. Để học Flexbox tốt hơn bạn nên xem video này
 
-14:23
+- Trang web tham khảo: https://codepen.io/enxaneta/full/adLPwv/
 
 ### 116. BEM là gì?
 
