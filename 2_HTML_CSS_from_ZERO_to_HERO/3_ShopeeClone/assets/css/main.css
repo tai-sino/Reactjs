@@ -1,0 +1,21 @@
+/* Navigation */
+.header__nav {
+	background-image: linear-gradient(0, #fe6430, #f53e2d);
+	height: 120px;
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+}
+.navbar__list {
+	display: flex;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	font-weight: 300;
+}
+.navbar__list li {
+	margin: 0 8px;
+}
+.navbar__list a {
+	color: var(--white-color);
+}

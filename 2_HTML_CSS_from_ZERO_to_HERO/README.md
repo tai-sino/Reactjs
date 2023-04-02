@@ -790,15 +790,17 @@ https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 
 ### 122. Dựng base source
 
-02:54
+- Inital Project Taisino Shopee
 
 ### 123. Reset CSS
 
-05:03
+- Normalize CSS
 
 ### 124. Dựng base CSS
 
-10:14
+- viết base.css
+  - set font-size: 62.5%;
+  - ...
 
 ### 125. Dựng khung web
 
