@@ -750,27 +750,43 @@ https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 
 ### 116. BEM là gì?
 
-14:50
+- Bem = Block element modifier
+- Cách dùng Bem:
+  - Block: .block
+  - Block modifier: .block--modifier
+  - Block element: .block\_\_element
+  - Block element modifier: .block\_\_element--modifier
 
 ### 117. Ôn tập BEM #1
 
-00:09
+- pass
 
 ### 118. Ôn tập BEM #2
 
-00:09
+- pass
 
 ### 119. Thực hành BEM - Level 1
 
-16:14
+- Làm Demo BEM
 
 ### 120. Bài thực hành Level 2
 
-35:49
+- Làm Demo BEM + js
+  - JS:
+    - createElement function
+    - classList.add
+    - innerHTML
+    - setTimeout function
+    - clearTimeout function
+    - console.log(e.target)
+    - e.target.closest
+    - appendChild function
+    - removeChild function
 
 ### 121. Đặt tên class khi Block lồng nhau
 
-10:43
+- Tách block nếu có nhiều block child
+- https://scalablecss.com/bem-blocks-within-blocks/
 
 ### 122. Dựng base source
 

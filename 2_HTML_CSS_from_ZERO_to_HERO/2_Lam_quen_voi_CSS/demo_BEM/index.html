@@ -13,41 +13,96 @@
 <body>
   <div class="main">
     <div class="container">
-      <button class="btn btn--active btn--size-s">Active</button>
-      <button class="btn btn--running btn--size-s">Running</button>
-      <button class="btn btn--deactive btn--size-s">Deactive</button>
+      <button onclick="showActiveToast()" class="btn btn--active btn--size-s">Active</button>
+      <button onclick="showRunningToast()" class="btn btn--running btn--size-s">Running</button>
+      <button onclick="showDeactiveToast()" class="btn btn--deactive btn--size-s">Deactive</button>
       <button class="btn btn--hover btn--size-s">Hover</button>
       <button class="btn btn--disabled btn--size-s">Disabled</button>
     </div>
     <div class="container">
-      <button class="btn btn--active">Active</button>
-      <button class="btn btn--running">Running</button>
-      <button class="btn btn--deactive">Deactive</button>
+      <button onclick="showActiveToast()" class="btn btn--active">Active</button>
+      <button onclick="showRunningToast()" class="btn btn--running">Running</button>
+      <button onclick="showDeactiveToast()" class="btn btn--deactive">Deactive</button>
       <button class="btn btn--hover">Hover</button>
       <button class="btn btn--disabled">Disabled</button>
     </div>
     <div class="container">
-      <button class="btn btn--active btn--size-l">Active</button>
-      <button class="btn btn--running btn--size-l">Running</button>
-      <button class="btn btn--deactive btn--size-l">Deactive</button>
+      <button onclick="showActiveToast()" class="btn btn--active btn--size-l">Active</button>
+      <button onclick="showRunningToast()" class="btn btn--running btn--size-l">Running</button>
+      <button onclick="showDeactiveToast()" class="btn btn--deactive btn--size-l">Deactive</button>
       <button class="btn btn--hover btn--size-l">Hover</button>
       <button class="btn btn--disabled btn--size-l">Disabled</button>
     </div>
   </div>
-  <div class="toast js-toast">
-    <div class="toast__icon toast__icon--active">
-      <i class="fa-solid fa-circle-check"></i>
-    </div>
-    <div class="toast__content">
-      <h4 class="toast__title">Clicked Active Button</h4>
-      <p class="toast__msg">Congrate, you passed this exam</p>
-    </div>
-    <div class="toast__close toast__close--active">
-      <i class="fa-solid fa-x"></i>
-    </div>
+  <div id="toast">
+
   </div>
 
   <script>
+    function toast({ title = '', message = '', type = 'active' }) {
+      const main = document.getElementById('toast');
+      const icons = {
+        active: 'fa-solid fa-circle-check',
+        running: 'fa-solid fa-circle-info',
+        deactive: 'fa-solid fa-circle-exclamation'
+      };
+
+
+
+
+      const icon = icons[type];
+      if (main) {
+        const toast = document.createElement('div');
+        toast.classList.add('toast', `toast--${type}`);
+        toast.innerHTML = `
+              <div class="toast__icon ">
+                <i class="${icon}"></i>
+              </div>
+              <div class="toast__content">
+                <h4 class="toast__title">${title}</h4>
+                <p class="toast__msg">${message}</p>
+              </div>
+              <div class="toast__close">
+                <i class="fa-solid fa-x"></i>
+              </div>
+          `;
+        main.appendChild(toast);
+
+        const autoRemoveToast = setTimeout(function () {
+          main.removeChild(toast);
+        }, 3000);
+        toast.onclick = function (event) {
+          if (event.target.closest('.toast__close')) {
+            main.removeChild(toast);
+            clearTimeout(autoRemoveToast);
+          }
+        }
+      }
+
+    }
+
+    function showActiveToast() {
+      toast({
+        title: 'Clicked Active Button!',
+        message: 'Congrate, you passed this exam.',
+        type: 'active'
+      })
+    }
+    function showRunningToast() {
+      toast({
+        title: 'Clicked Running Button!',
+        message: 'Congrate, you passed this exam.',
+        type: 'running'
+      })
+    }
+    function showDeactiveToast() {
+      toast({
+        title: 'Clicked Deactive Button!',
+        message: 'Congrate, you passed this exam.',
+        type: 'deactive'
+      })
+    }
+
 
   </script>
 </body>
