@@ -12,10 +12,33 @@
 	font-size: 1.6rem;
 	line-height: 1.5;
 	font-weight: 300;
+	margin-top: 0.4rem;
 }
-.navbar__list li {
+.navbar__item {
 	margin: 0 8px;
+	position: relative;
+}
+.navbar__item a:hover {
+	opacity: 0.8;
 }
 .navbar__list a {
 	color: var(--white-color);
+}
+.navbar__item--default a {
+	cursor: default;
+}
+.navbar__item--default a:hover {
+	opacity: 1;
+	cursor: default;
+}
+
+.navbar__item--separate::after {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -8px;
+	height: 1.6rem;
+	border-left: 2px solid var(--separete-color);
 }
