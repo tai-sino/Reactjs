@@ -18,12 +18,28 @@
 
 <body>
   <div class="app">
+    <!-- Begin header -->
     <header class="header">
+      <!-- Begin nav -->
       <nav class="header__nav">
         <div class="navbar grid">
           <ul class="navbar__list">
-            <li class="navbar__item navbar__item--separate "><a href="#">Vào cửa hàng trên ứng dụng</a></li>
-            <li class="navbar__item navbar__item--default"><a href="#">Kết nối</a></li>
+            <li class="navbar__item navbar__item--separate "><a href="#">Vào cửa hàng trên ứng dụng Taisino_Shopee</a>
+              <!-- Begin qrcode modal-->
+              <div class="navbar__qrcode hide">
+                <img src="./assets/imgs/qr_code.png" alt="qr_code">
+                <div class="navbar__store">
+                  <div class="navbar__storelink"><a><img src="./assets/imgs/google_play.png" alt="google_play"></a>
+                  </div>
+                  <div class="navbar__storelink"><a><img src="./assets/imgs/app_store.png" alt="app_store"></a></div>
+                  <div class="navbar__storelink">
+                    <div><a><img src="./assets/imgs/app_gallery.png" alt="app_gallery"></a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- End qrcode modal -->
+            </li>
+            <li class="navbar__item">Kết nối</li>
             <li class="navbar__item"><a href="#">
                 <i class="fa-brands fa-facebook"></i></a></li>
             <li class="navbar__item"><a href="#">
@@ -36,6 +52,63 @@
                 <i class="fa-regular fa-bell"></i>
                 Thông báo
               </a>
+              <!-- Begin Notify modal -->
+              <div class="navbar__notify hide">
+                <h3 class="notify__header">Thông Báo Mới Nhận</h3>
+                <div class="notify__container">
+                  <ul class="notify__list">
+                    <li>
+                      <a class="notify__item" href="#">
+                        <div class="notify__img">
+                          <img src="./assets/imgs/ohui.webp" alt="item">
+                        </div>
+                        <div class="notify__content">
+                          <span class="notify__name">
+                            Xác thực chính hãng nguồn gốc các sản phẩm Ohui
+                          </span>
+                          <span class="notify__description">
+                            HiddenTag là giải pháp xác thực hàng chính hãng bằng công nghệ tiên tiến nhất hiện nay.
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="notify__item" href="#">
+                        <div class="notify__img">
+                          <img src="./assets/imgs/ohui.webp" alt="item">
+                        </div>
+                        <div class="notify__content">
+                          <span class="notify__name">
+                            Xác thực chính hãng nguồn gốc các sản phẩm Ohui
+                          </span>
+                          <span class="notify__description">
+                            HiddenTag là giải pháp xác thực hàng chính hãng bằng công nghệ tiên tiến nhất hiện nay.
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="notify__item" href="#">
+                        <div class="notify__img">
+                          <img src="./assets/imgs/ohui.webp" alt="item">
+                        </div>
+                        <div class="notify__content">
+                          <span class="notify__name">
+                            Xác thực chính hãng nguồn gốc các sản phẩm Ohui
+                          </span>
+                          <span class="notify__description">
+                            HiddenTag là giải pháp xác thực hàng chính hãng bằng công nghệ tiên tiến nhất hiện nay.
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="notify__footer">
+                  <a href="">Xem tất cả</a>
+                </div>
+              </div>
+              <!-- End Notify modal -->
             </li>
             <li class="navbar__item"><a href="#"><i class="fa-regular fa-circle-question"></i>
                 Trợ giúp</a>
@@ -46,7 +119,17 @@
         </div>
 
       </nav>
+      <!-- End nav -->
+      <!-- Begin search bar -->
+      <div class="header__logo">
+
+      </div>
+      <div class="header__searchbar"></div>
+      <div class="header__cart"></div>
+      <!-- End search bar -->
+
     </header>
+    <!-- End header -->
   </div>
 </body>
 
