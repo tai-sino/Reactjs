@@ -804,39 +804,40 @@ https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 
 ### 125. Dựng khung web
 
-11:12
+- Tạo các thẻ semantics tag
+  - dựng tổng quan các tag lớn
 
 ### 126. Navbar CSS
 
-23:50
+- header navbar
 
 ### 127. Nhúng Font-Icons
 
-09:38
+- nhúng cdn font awesome
 
 ### 128. Icons CSS
 
-08:21
+- sử dụng icon font awesome
 
 ### 129. Header QR code CSS
 
-33:07
+- tạo modal QR code với animation
 
 ### 130. Header notification CSS - Phần 1
 
-38:28
+- tạo modal notify với animation
 
 ### 131. Header notification CSS - Phần 2
 
-19:05
+- thêm ::before để modal k bị ẩn khi lia chuột
 
 ### 132. Header notification CSS - Phần 3
 
-13:16
+- làm arrow with border css
 
 ### 133. Header notification CSS - Phần 4
 
-04:29
+- khi sử dụng animation nên sử dụng prefix và will-change
 
 ### 134. Base modal
 
