@@ -5,7 +5,7 @@
 	--text-color: #333 !important;
 	--primary-color: #ee4d2d I !important;
 }
-* {
+*:not(dialog):not(button) {
 	padding: 0;
 	margin: 0;
 	box-sizing: inherit;
@@ -34,4 +34,12 @@ a {
 .grid__row {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.btn {
+	display: block;
+	padding: auto;
+	line-height: 2.8rem;
+	font-weight: 500;
+	font-size: 1.4rem;
 }
