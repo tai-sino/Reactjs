@@ -252,7 +252,6 @@
 .modal__form {
 	display: flex;
 	flex-direction: column;
-	min-height: 200px;
 	padding: 10px 0;
 }
 .modal__form .form__input {
@@ -265,8 +264,32 @@
 	color: rgba(0 0 0 / 0.3);
 	font-weight: 500;
 }
-
+.form__optional {
+	display: flex;
+	justify-content: space-between;
+	margin: 8px 0;
+}
 .modal__footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.mfooter__separate-line {
+	display: flex;
+	background-color: rgba(0 0 0 / 0.5);
+	height: 1px;
+	width: 50px;
+}
+.mfooter__text-separate {
+	display: flex;
+	font-weight: 500;
+	color: rgb(0 0 0 / 0.3);
+}
+.mfooter__separate {
+	display: flex;
+}
+.mfooter__register {
 	display: flex;
 }
 
@@ -283,7 +306,10 @@
 	background-color: #ee4d2d;
 	opacity: 0.7;
 	border: none;
+	line-height: 3.2rem;
+	font-weight: 400;
 }
+
 /* keyframes */
 @keyframes FadeIn {
 	from {
