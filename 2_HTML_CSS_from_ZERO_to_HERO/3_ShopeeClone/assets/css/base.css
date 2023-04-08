@@ -40,6 +40,9 @@ a {
 	display: block;
 	padding: auto;
 	line-height: 2.8rem;
-	font-weight: 500;
-	font-size: 1.4rem;
+	cursor: pointer;
+}
+.btn__disabled {
+	cursor: not-allowed;
+	opacity: 0.7;
 }
