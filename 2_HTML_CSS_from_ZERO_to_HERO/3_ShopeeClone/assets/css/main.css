@@ -83,7 +83,9 @@
 .navbar__storelink img {
 	height: 100%;
 }
+
 /* navbar notify */
+
 .navbar__notify {
 	position: absolute;
 	right: 0;
@@ -91,11 +93,12 @@
 	width: 404px;
 	display: flex;
 	flex-direction: column;
-	min-height: 4 00px;
+	min-height: 400px;
 	background-color: var(--white-color);
 	transform-origin: calc(100% - 20px) top;
 	animation: ScaleIn ease-in 0.25s;
 	will-change: opacity, transform;
+	box-shadow: 0 0 1rem rgba(238, 75, 43, 0.3);
 }
 .navbar__notify::before {
 	position: absolute;
@@ -136,7 +139,6 @@
 
 .notify__item {
 	display: flex;
-	max-height: 78px;
 	color: var(--black-color);
 	background-color: rgba(238, 75, 43, 0.08);
 }
@@ -158,12 +160,14 @@
 	max-width: 78px;
 }
 .notify__content {
+	align-items: center;
 	display: flex;
 	flex: 8;
 	flex-direction: column;
-	min-height: 80px;
+	min-height: 90px;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
+	padding: 10px;
 }
 .notify__name {
 	display: flex;
@@ -196,9 +200,7 @@
 	color: #000;
 }
 /* Begin modal form */
-/* .modal__register {
-	display: flex;
-} */
+
 .modal__section {
 	flex-direction: column;
 	border: none;
@@ -206,6 +208,7 @@
 	padding: 20px;
 	border-radius: 3px;
 	background-color: var(--white-color);
+	animation: FadeIn 0.3s linear;
 }
 .modal__header {
 	display: flex;
@@ -351,12 +354,14 @@
 }
 .mfooter__policy {
 	display: block;
-	margin: auto;
-	width: 76%;
+	margin: auto auto 16px auto;
+	width: 215px;
 	text-align: center;
 }
-.mfooter__policy p {
+.mfooter__policy a {
+	color: #fe6430;
 }
+
 .mfooter__lastline {
 	display: flex;
 	justify-content: center;

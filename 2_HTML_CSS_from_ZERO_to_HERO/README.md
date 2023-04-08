@@ -841,27 +841,29 @@ https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 
 ### 134. Base modal
 
-12:13
+- Học và tìm hiểu cách sử dụng dialog
 
 ### 135. Dựng khung form đăng ký
 
-16:42
+- Dựng khung các thành phần chính của form
 
 ### 136. CSS form đăng ký
 
-26:59
+- CSS form
 
 ### 137. CSS form đăng ký - Phần 2
 
-26:14
+- CSS form
 
 ### 138. CSS form đăng nhập
 
-16:00
+- CSS form
 
 ### 139. Modal animation
 
-06:15
+- sử showModal() dialog và 1 trick để close() modal
+- Tham khảo cách thêm animation vào showModal và close()
+- http://jsfiddle.net/karlhorky/eg4n3x18/
 
 ### 140. Dựng khung phần tìm kiếm
 
