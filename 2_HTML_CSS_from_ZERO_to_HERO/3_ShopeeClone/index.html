@@ -128,7 +128,9 @@
       <div class="header__search grid">
         <div class="header__logo">
           <div class="hlogo__wrapper">
-            <img src="./assets/imgs/shopee-icon.svg" alt="">
+            <a href="">
+              <img src="./assets/imgs/shopee-icon.svg" alt="">
+            </a>
           </div>
         </div>
         <div class="header__searchbar">
@@ -138,108 +140,118 @@
           </button>
 
         </div>
-
+        <!-- Begin cart popup -->
         <div class="header__cart">
           <a class="btn header__cart-btn" href="">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <p class="cart__quantity">3</p>
+            <i class="fa-solid fa-cart-shopping">
+              <p class="cart__quantity">3</p>
+
+            </i>
+            <!-- Begin Cart popup -->
+            <div class="cart__popup hide">
+              <div class="popup__up-arrow"></div>
+              <h3 class="popup__header">Sản phẩm đã thêm</h3>
+              <div class="popup__container">
+                <ul class="popup__list">
+                  <li>
+                    <!-- Begin Popup item -->
+                    <a class="popup__item" href="#">
+                      <div class="popup__img">
+                        <img src="./assets/imgs/ohui.webp" alt="item">
+                      </div>
+                      <div class="popup__content">
+                        <span class="popup__name">
+                          <p class="popup__item-name">
+                            Nước rửa mặt Oxy
+                          </p>
+                          <p class="popup__price">
+                            2.000.000đ
+                          </p>
+                          <p>x3</p>
+                        </span>
+                        <span class="popup__description">
+                          <p class="popup__type">
+                            Loại sản phẩm: Trắng
+                          </p>
+                          <p class="popup__delete">Xoá</p>
+                        </span>
+                      </div>
+                    </a>
+                    <!-- End popup item -->
+                  </li>
+                  <li>
+                    <!-- Begin Popup item -->
+                    <a class="popup__item" href="#">
+                      <div class="popup__img">
+                        <img src="./assets/imgs/ohui.webp" alt="item">
+                      </div>
+                      <div class="popup__content">
+                        <span class="popup__name">
+                          <p class="popup__item-name">
+                            Nước rửa mặt Oxy
+                          </p>
+                          <p class="popup__price">
+                            5.000.000đ
+                          </p>
+                          <p>x1</p>
+                        </span>
+                        <span class="popup__description">
+                          <p class="popup__type">
+                            Loại sản phẩm: Mix
+                          </p>
+                          <p class="popup__delete">Xoá</p>
+                        </span>
+                      </div>
+                    </a>
+                    <!-- End popup item -->
+                  </li>
+                  <li>
+                    <!-- Begin Popup item -->
+                    <a class="popup__item" href="#">
+                      <div class="popup__img">
+                        <img src="./assets/imgs/ohui.webp" alt="item">
+                      </div>
+                      <div class="popup__content">
+                        <span class="popup__name">
+                          <p class="popup__item-name">
+                            Nước rửa mặt Oxy
+                          </p>
+                          <p class="popup__price">
+                            1.000.000đ
+                          </p>
+                          <p>x4</p>
+                        </span>
+                        <span class="popup__description">
+                          <p class="popup__type">
+                            Loại sản phẩm: Xanh
+                          </p>
+                          <p class="popup__delete">Xoá</p>
+                        </span>
+                      </div>
+                    </a>
+                    <!-- End popup item -->
+                  </li>
+                </ul>
+              </div>
+              <div class="popup__footer">
+                <a href="">Xem toàn bộ giỏ hàng</a>
+              </div>
+            </div>
+            <!-- End Cart popup -->
           </a>
-          <!-- Begin CARD popup -->
-          <div class="cart__popup hide">
-            <div class="popup__up-arrow"></div>
-            <h3 class="popup__header">Sản phẩm đã thêm</h3>
-            <div class="popup__container">
-              <ul class="popup__list">
-                <li>
-                  <!-- Begin Popup item -->
-                  <a class="popup__item" href="#">
-                    <div class="popup__img">
-                      <img src="./assets/imgs/ohui.webp" alt="item">
-                    </div>
-                    <div class="popup__content">
-                      <span class="popup__name">
-                        <p class="popup__item-name">
-                          Nước rửa mặt Oxy
-                        </p>
-                        <p class="popup__price">
-                          2.000.000đ
-                        </p>
-                        <p>x3</p>
-                      </span>
-                      <span class="popup__description">
-                        <p class="popup__type">
-                          Loại sản phẩm: Trắng
-                        </p>
-                        <p class="popup__delete">Xoá</p>
-                      </span>
-                    </div>
-                  </a>
-                  <!-- End popup item -->
-                </li>
-                <li>
-                  <!-- Begin Popup item -->
-                  <a class="popup__item" href="#">
-                    <div class="popup__img">
-                      <img src="./assets/imgs/ohui.webp" alt="item">
-                    </div>
-                    <div class="popup__content">
-                      <span class="popup__name">
-                        <p class="popup__item-name">
-                          Nước rửa mặt Oxy
-                        </p>
-                        <p class="popup__price">
-                          5.000.000đ
-                        </p>
-                        <p>x1</p>
-                      </span>
-                      <span class="popup__description">
-                        <p class="popup__type">
-                          Loại sản phẩm: Mix
-                        </p>
-                        <p class="popup__delete">Xoá</p>
-                      </span>
-                    </div>
-                  </a>
-                  <!-- End popup item -->
-                </li>
-                <li>
-                  <!-- Begin Popup item -->
-                  <a class="popup__item" href="#">
-                    <div class="popup__img">
-                      <img src="./assets/imgs/ohui.webp" alt="item">
-                    </div>
-                    <div class="popup__content">
-                      <span class="popup__name">
-                        <p class="popup__item-name">
-                          Nước rửa mặt Oxy
-                        </p>
-                        <p class="popup__price">
-                          1.000.000đ
-                        </p>
-                        <p>x4</p>
-                      </span>
-                      <span class="popup__description">
-                        <p class="popup__type">
-                          Loại sản phẩm: Xanh
-                        </p>
-                        <p class="popup__delete">Xoá</p>
-                      </span>
-                    </div>
-                  </a>
-                  <!-- End popup item -->
-                </li>
-              </ul>
-            </div>
-            <div class="popup__footer">
-              <a href="">Xem toàn bộ giỏ hàng</a>
-            </div>
-          </div>
-          <!-- End Notify modal -->
+
+
         </div>
+        <!-- End header cart -->
+
       </div>
       <!-- End search bar -->
     </header>
     <!-- End header -->
+
+
+
+
   </div>
   <dialog class="modal__section modal__login">
     <div class="modal__header">

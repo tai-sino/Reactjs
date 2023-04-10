@@ -23,6 +23,7 @@ ul li {
 a {
 	text-decoration: none;
 }
+
 .grid {
 	width: 1200px;
 	max-width: 100%;
@@ -41,6 +42,9 @@ a {
 	padding: auto;
 	line-height: 2.8rem;
 	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 2px;
 }
 .btn__disabled {
 	cursor: not-allowed;
